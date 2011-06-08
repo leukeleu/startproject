@@ -1,0 +1,404 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+/* Body */
+
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Page */
+
+#wpr-page {
+
+}
+
+#page {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* Header */
+
+header {
+	margin-bottom: 10px;
+}
+
+#logo {
+	padding: 15px 10px;
+	font-size: 40px;
+	color: #999;
+	font-weight: lighter;
+}
+
+/* Main menu */
+
+#mainmenu {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px;
+}
+
+#mainmenu ul li {
+	float: left;
+	display: block;
+	margin-right: 18px;
+}
+
+#mainmenu ul li a {
+	font-size: 12px;
+	line-height: 120%;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666;
+}
+
+#mainmenu ul li a:hover,
+#mainmenu ul li.current a {
+	color: #f30;
+}
+
+/* Submenu */
+
+#submenu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#submenu ul li {
+	margin-bottom: 0.3em;
+}
+
+#submenu ul li ul {
+	margin: 0.3em 0;
+}
+
+#submenu ul li ul li {
+	margin-left: 15px;
+}
+
+#submenu ul li a {
+	font-size: 14px;
+	line-height: 120%;
+	text-decoration: none;
+	color: #666;
+}
+
+#submenu ul li a:hover,
+#submenu ul li.current a {
+	color: #f30;
+}
+
+#submenu ul li.current ul li a {
+	color: #666;
+}
+
+#submenu ul li.current ul li a:hover,
+#submenu ul li ul li.current a {
+	color: #f30;
+}
+
+/* Breadcrumbs */
+
+#breadcrumbs {
+	padding: 10px 0 20px 0;
+}
+
+#breadcrumbs ul li {
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+
+#breadcrumbs ul li a {
+	font-size: 12px;
+	line-height: 120%;
+	text-decoration: none;
+	color: #666;
+}
+
+#breadcrumbs ul li:after {
+	content: '»';
+	color: #666;
+}
+
+#breadcrumbs ul li:last-child:after {
+	content: '';
+}
+
+/* ---[ Main ]--- */
+
+#main {
+	padding-bottom: 40px;
+}
+
+/* ---[ Main layout ]--- */
+
+#aside-left,
+#aside-right,
+#main {
+	float: left;
+	padding: 10px;
+	width: 200px;
+	min-height: 10px;
+}
+
+#main {
+	padding: 0 10px;
+	width: 500px;
+}
+
+/* Content formatting */
+
+.content {
+
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+	font-weight: bold;
+	color: #666;
+}
+
+.content h1 {
+	font-size: 30px;
+    line-height: 120%;
+}
+
+.content h2 {
+	font-size: 16px;
+	line-height: 150%;
+	color: #666;
+}
+
+.content h3 {
+	font-size: 14px;
+}
+
+.content ul,
+.content ol,
+.content p {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.content p {
+	margin-bottom: 21px;
+}
+
+.content p.lead {
+	font-weight: bold;
+}
+
+.content table {
+	margin: 0 0 1.25em 0;
+	border: 1px solid #333;
+	width: 100%;
+}
+
+.content table tr th,
+.content table tr td {
+	border: 1px solid #333;
+	display: table-cell;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.content table tr th {
+	color: #fff;
+	background-color: #555;
+}
+
+.content a {
+	color: #333;
+	text-decoration: underline;
+}
+
+.content a:hover {
+	text-decoration: none;
+}
+
+.content img,
+.content img.left {
+	float: left;
+	margin: 0 1em 0.5em 0;
+}
+
+.content img.right {
+	float: right;
+	margin: 0 0 0.5em 1em;
+}
+
+.content strong {
+	font-weight: bold;
+}
+
+.content em {
+	font-style: italic;
+}
+
+.content blockquote {
+	border-left: 1px double #666;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+address {
+	padding: 5px 10px;
+	height: 20px;
+	font-style: normal;
+	text-align: right;
+	color: #ccc;
+}
+
+.content ul,
+.content ol {
+	margin: 0 0 1.25em 0;
+}
+
+.content ul li ul,
+.content ol li ol {
+	margin-bottom: 0;
+}
+
+.content p + ul,
+.content p + ol {
+	margin-top: -21px;
+}
+
+.content ul li {
+	margin-left: 15px;
+	padding: 0.1em 0 0.1em 0.1em;
+	list-style-type: square;
+}
+
+.content ul li {
+	margin-left: 15px;
+	padding: 0.1em 0 0.1em 0.1em;
+	list-style-type: disc;
+}
+
+.content ul li ul,
+.content ul li ul li ul {
+	margin: 0;
+}
+
+.content ul li ul li,
+.content ul li ul li ul li {
+
+}
+
+ol li {
+	margin-left: 20px;
+	padding: 0.1em 0 0.1em 0;
+	list-style-type: decimal;
+}
+
+/* Aside */
+
+aside {
+
+}
+
+aside .content h3 {
+	margin-bottom: 6px;
+	padding: 0 0 6px 35px;
+	background: url('../images/bg-sprite.png') no-repeat -931px bottom;
+	font-family: 'ff-tisa-web-pro-1', 'ff-tisa-web-pro-2', sans-serif;
+	font-size: 16px;
+	line-height: 120%;
+	font-weight: 700;
+	color: #dc3e26;
+}
+
+aside .content p,
+aside .content ul li,
+aside .content ol li {
+	font-size: 13px;
+	line-height: 120%;
+	color: #595959;
+}
+
+/* Footer */
+
+footer {
+	position: relative;
+	clear: both;
+	margin: 0;
+	height: 150px;
+	background-color: #f4f3f0;
+}
+
+footer .logo {
+	float: left;
+	margin: 17px 0 0 19px;
+}
+
+footer .logo a {
+	display: block;
+	width: 66px;
+	height: 34px;
+	background: url('../images/bg-sprite.png') no-repeat -130px -40px;
+	text-indent: -9999px;
+}
+
+footer .triangle-down {
+	float: left;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 18px solid #fff;
+	width: 0;
+	height: 0;
+}
+
+/* Generalmenu */
+
+#generalmenu {
+	float: right;
+	margin: 0 36px 0 0;
+}
+
+#generalmenu ul {
+	float: left;
+	margin: 18px 0 0 4px;
+}
+
+#generalmenu ul li {
+	float: left;
+	font-size: 10px;
+	line-height: 120%;
+}
+
+#generalmenu ul li a {
+	border-right: 1px solid #7f7f7f;
+	margin-right: 8px;
+	padding-right: 8px;
+	text-decoration: none;
+	color: #7f7f7f;
+}
+
+#generalmenu ul li.last a {
+	border-right: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+#generalmenu ul li a:hover,
+#generalmenu ul li.current a {
+	color: #d40600;
+}
+
+/* Clearfix boilerplate */
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

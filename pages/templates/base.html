@@ -3,42 +3,43 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title></title>
+	<title>{% block title %}{{ fiber_page.title }}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
 </head>
-<body>
-    <section id="main">
+<body class="{% block body_class %}{{ fiber_page.title|slugify }}{% endblock %}">
+	<div id="wpr-page">
+		<div id="page">
+			<header>
+				<div id="logo">Django Fiber example</div>
+				<nav id="mainmenu" class="clearfix">
+					{% show_menu "mainmenu" 1 1 %}
+				</nav>
+			</header>
+			<aside id="aside-left">
+				<nav id="submenu">
+					{% show_menu "mainmenu" 2 3 %}
+				</nav>
+			</aside>
+			<section id="main">
+				<nav id="breadcrumbs" class="clearfix">
+					<ul>
+						{% for fiber_page in fiber_current_pages %}
+						<li>
+							<a href="{{ fiber_page.get_absolute_url }}">{{ fiber_page.title }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+				<article>
+					{% show_page_content "main" %}
+				</article>
+			</section>
+			<aside id="aside-right">
+				{% show_page_content "aside" %}
 
-    	<div id="breadcrumbs">
-    		<ul>
-    			{% for fiber_page in fiber_current_pages %}
-    			<li>
-    				<a href="{{ fiber_page.get_absolute_url }}">{{ fiber_page.title }}</a>
-    			</li>
-    			{% endfor %}
-    		</ul>
-    	</div>
-
-    	<div id="mainmenu">
-    		{% show_menu "mainmenu" 1 1 %}
-    	</div>
-
-    	<div id="submenu">
-    		{% show_menu "mainmenu" 2 3 %}
-    	</div>
-
-    	<div id="subsubmenu">
-    		{% show_menu "mainmenu" 4 5 "all_descendants" %}
-    	</div>
-
-        {% show_page_content "main" %}
-
-    </section>
-    <aside id="aside">
-
-        {% show_page_content "aside" %}
-
-        {% show_content "address" %}
-
-    </aside>
+				{% show_content "address" %}
+			</aside>
+		</div>
+	</div>
 </body>
 </html>
