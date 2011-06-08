@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load fiber_tags %}
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<body>
+    <section id="main">
+
+    	<div id="breadcrumbs">
+    		<ul>
+    			{% for fiber_page in fiber_current_pages %}
+    			<li>
+    				<a href="{{ fiber_page.get_absolute_url }}">{{ fiber_page.title }}</a>
+    			</li>
+    			{% endfor %}
+    		</ul>
+    	</div>
+
+    	<div id="mainmenu">
+    		{% show_menu "mainmenu" 1 1 %}
+    	</div>
+
+    	<div id="submenu">
+    		{% show_menu "mainmenu" 2 3 %}
+    	</div>
+
+    	<div id="subsubmenu">
+    		{% show_menu "mainmenu" 4 5 "all_descendants" %}
+    	</div>
+
+        {% show_page_content "main" %}
+
+    </section>
+    <aside id="aside">
+
+        {% show_page_content "aside" %}
+
+        {% show_content "address" %}
+
+    </aside>
+</body>
+</html>
