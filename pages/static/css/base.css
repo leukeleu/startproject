@@ -10,6 +10,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 body {
 	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #666;
 }
 
 /* Page */
@@ -195,31 +196,8 @@ header {
 	margin-bottom: 21px;
 }
 
-.content p.lead {
-	font-weight: bold;
-}
-
-.content table {
-	margin: 0 0 1.25em 0;
-	border: 1px solid #333;
-	width: 100%;
-}
-
-.content table tr th,
-.content table tr td {
-	border: 1px solid #333;
-	display: table-cell;
-	padding: 5px;
-	vertical-align: top;
-}
-
-.content table tr th {
-	color: #fff;
-	background-color: #555;
-}
-
 .content a {
-	color: #333;
+	color: #f30;
 	text-decoration: underline;
 }
 
@@ -227,15 +205,9 @@ header {
 	text-decoration: none;
 }
 
-.content img,
-.content img.left {
+.content img {
 	float: left;
 	margin: 0 1em 0.5em 0;
-}
-
-.content img.right {
-	float: right;
-	margin: 0 0 0.5em 1em;
 }
 
 .content strong {
@@ -244,20 +216,6 @@ header {
 
 .content em {
 	font-style: italic;
-}
-
-.content blockquote {
-	border-left: 1px double #666;
-	padding-left: 10px;
-	font-style: italic;
-}
-
-address {
-	padding: 5px 10px;
-	height: 20px;
-	font-style: normal;
-	text-align: right;
-	color: #ccc;
 }
 
 .content ul,
@@ -287,114 +245,10 @@ address {
 	list-style-type: disc;
 }
 
-.content ul li ul,
-.content ul li ul li ul {
-	margin: 0;
-}
-
-.content ul li ul li,
-.content ul li ul li ul li {
-
-}
-
 ol li {
 	margin-left: 20px;
 	padding: 0.1em 0 0.1em 0;
 	list-style-type: decimal;
-}
-
-/* Aside */
-
-aside {
-
-}
-
-aside .content h3 {
-	margin-bottom: 6px;
-	padding: 0 0 6px 35px;
-	background: url('../images/bg-sprite.png') no-repeat -931px bottom;
-	font-family: 'ff-tisa-web-pro-1', 'ff-tisa-web-pro-2', sans-serif;
-	font-size: 16px;
-	line-height: 120%;
-	font-weight: 700;
-	color: #dc3e26;
-}
-
-aside .content p,
-aside .content ul li,
-aside .content ol li {
-	font-size: 13px;
-	line-height: 120%;
-	color: #595959;
-}
-
-/* Footer */
-
-footer {
-	position: relative;
-	clear: both;
-	margin: 0;
-	height: 150px;
-	background-color: #f4f3f0;
-}
-
-footer .logo {
-	float: left;
-	margin: 17px 0 0 19px;
-}
-
-footer .logo a {
-	display: block;
-	width: 66px;
-	height: 34px;
-	background: url('../images/bg-sprite.png') no-repeat -130px -40px;
-	text-indent: -9999px;
-}
-
-footer .triangle-down {
-	float: left;
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-top: 18px solid #fff;
-	width: 0;
-	height: 0;
-}
-
-/* Generalmenu */
-
-#generalmenu {
-	float: right;
-	margin: 0 36px 0 0;
-}
-
-#generalmenu ul {
-	float: left;
-	margin: 18px 0 0 4px;
-}
-
-#generalmenu ul li {
-	float: left;
-	font-size: 10px;
-	line-height: 120%;
-}
-
-#generalmenu ul li a {
-	border-right: 1px solid #7f7f7f;
-	margin-right: 8px;
-	padding-right: 8px;
-	text-decoration: none;
-	color: #7f7f7f;
-}
-
-#generalmenu ul li.last a {
-	border-right: none;
-	margin-right: 0;
-	padding-right: 0;
-}
-
-#generalmenu ul li a:hover,
-#generalmenu ul li.current a {
-	color: #d40600;
 }
 
 /* Clearfix boilerplate */
