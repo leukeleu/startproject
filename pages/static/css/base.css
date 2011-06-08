@@ -48,10 +48,19 @@ header {
 #mainmenu ul li {
 	float: left;
 	display: block;
-	margin-right: 18px;
+	padding: 0 9px;
+}
+
+#mainmenu ul li:first-child {
+	padding-left: 0;
+}
+
+#mainmenu ul li:last-child {
+	padding-right: 0;
 }
 
 #mainmenu ul li a {
+	display: block;
 	font-size: 12px;
 	line-height: 120%;
 	font-weight: bold;
@@ -69,16 +78,15 @@ header {
 /* Submenu */
 
 #submenu ul {
-	margin: 0;
-	padding: 0;
+	width: 120px;
 }
 
 #submenu ul li {
-	margin-bottom: 0.3em;
+	margin: 0.5em 0;
 }
 
 #submenu ul li ul {
-	margin: 0.3em 0;
+	margin: 0.5em 0;
 }
 
 #submenu ul li ul li {
@@ -86,6 +94,7 @@ header {
 }
 
 #submenu ul li a {
+	display: block;
 	font-size: 14px;
 	line-height: 120%;
 	text-decoration: none;
@@ -196,6 +205,25 @@ header {
 	margin-bottom: 21px;
 }
 
+.content table {
+	margin: 0 0 1.25em 0;
+	border: 1px solid #333;
+	width: 100%;
+}
+
+.content table tr th,
+.content table tr td {
+	border: 1px solid #333;
+	display: table-cell;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.content table tr th {
+	color: #fff;
+	background-color: #555;
+}
+
 .content a {
 	color: #f30;
 	text-decoration: underline;
@@ -243,6 +271,11 @@ header {
 	margin-left: 15px;
 	padding: 0.1em 0 0.1em 0.1em;
 	list-style-type: disc;
+}
+
+.content ul li ul,
+.content ul li ul li ul {
+	margin: 0;
 }
 
 ol li {
