@@ -1,4 +1,7 @@
 import os
+
+import django.conf.global_settings as DEFAULT_SETTINGS
+
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
@@ -77,9 +80,7 @@ STATICFILES_DIRS = (
 
 # List of finder classes that know how to find static files in
 # various locations.
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+STATICFILES_FINDERS = DEFAULT_SETTINGS.STATICFILES_FINDERS + (
     'compressor.finders.CompressorFinder',
 )
 
@@ -94,11 +95,8 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    ) + DEFAULT_SETTINGS.MIDDLEWARE_CLASSES + (
     'fiber.middleware.ObfuscateEmailAddressMiddleware',
     'fiber.middleware.AdminPageMiddleware',
     'fiber.middleware.PageFallbackMiddleware',
@@ -112,13 +110,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.media',
-    'django.core.context_processors.static',
-    'django.contrib.messages.context_processors.messages',
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
     'django.core.context_processors.request',
     'fiber.context_processors.page_info',
 )
@@ -131,6 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'piston',
     'mptt',
     'compressor',
     'fiber',
