@@ -8,17 +8,9 @@ DFE.init = function() {
 			this.base[basefn]();
 	    }
 	}
-
-	// call all extended methods
-	for (var extendfn in this.extend) {
-		if (this.extend.hasOwnProperty(extendfn)) {
-			this.extend[extendfn]();
-		}
-	}
 };
 
 DFE.base = {};
-DFE.ajax = {};
 
 DFE.base.externalLinks = function() {
 	// open external links in new window
