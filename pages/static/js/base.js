@@ -2,12 +2,10 @@
 var DFE = {};
 
 DFE.init = function() {
-	// call all base methods
-	for (var basefn in this.base) {
-		if (this.base.hasOwnProperty(basefn)) {
-			this.base[basefn]();
-	    }
-	}
+
+	// call base methods
+	DFE.base.externalLinks();
+	DFE.base.downloadLinks();
 };
 
 DFE.base = {};
