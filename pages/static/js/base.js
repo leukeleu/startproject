@@ -1,16 +1,16 @@
 // namespace all code
-var DFE = {};
+var DFSP = {};
 
-DFE.init = function() {
+DFSP.init = function() {
 
 	// call base methods
-	DFE.base.externalLinks();
-	DFE.base.downloadLinks();
+	DFSP.base.externalLinks();
+	DFSP.base.downloadLinks();
 };
 
-DFE.base = {};
+DFSP.base = {};
 
-DFE.base.externalLinks = function() {
+DFSP.base.externalLinks = function() {
 	// open external links in new window
 	$('a[href*="http://"]:not([href*="' + location.hostname + '"]), a[href*="https://"]:not([href*="' + location.hostname + '"])')
 		.addClass('external')
@@ -18,7 +18,7 @@ DFE.base.externalLinks = function() {
 		.attr('title', 'Open in nieuw venster');
 };
 
-DFE.base.downloadLinks = function() {
+DFSP.base.downloadLinks = function() {
 	// open download links in new window
 	$('a[href$=".pdf"], a[href$=".doc"], a[href$=".docx"], a[href$=".xls"], a[href$=".xlsx"], a[href$=".zip"], a[href$=".gz"]')
 		.addClass('download')
@@ -26,5 +26,5 @@ DFE.base.downloadLinks = function() {
 };
 
 $(function() {
-	DFE.init();
+	DFSP.init();
 });
