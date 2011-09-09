@@ -111,6 +111,7 @@ TEMPLATE_DIRS = (
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
     'django.core.context_processors.request',
     'fiber.context_processors.page_info',
+    'pages.context_processors.site_settings',
 )
 
 INSTALLED_APPS = (
@@ -148,5 +149,13 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
+    }
+}
+
+SITE_SETTINGS = {
+    'name': 'Django Fiber starting point',
+    'api_keys': {
+        'google_maps': '',
+        'google_analytics': '',
     }
 }

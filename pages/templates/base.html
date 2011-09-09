@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>{% block doc_title %}{{ fiber_page.title }}{% endblock %}</title>
+		<title>{% block doc_title %}{{ fiber_page.title }}{% endblock %} - {{ site_settings.name }}</title>
 
 		{% block meta %}{% endblock %}
 
@@ -17,7 +17,7 @@
 	<body class="{{ fiber_page.title|slugify }} {% block extend_body_class %}{% endblock %}">
 		<div id="page">
 			<header>
-				<div id="logo">Django Fiber starting point</div>
+				<div id="logo">{{ site_settings.name }}</div>
 				<nav id="mainmenu" class="group">
 					{% show_menu "mainmenu" 1 1 %}
 				</nav>
