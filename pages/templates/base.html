@@ -10,10 +10,11 @@
 		{% compress css %}
 			<link rel="stylesheet" href="{{ STATIC_URL }}css/gridless-boilerplate-2.0.css">
 			<link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
+			{% block extend_css %}{% endblock %}
 		{% endcompress %}
 	</head>
 
-	<body class="{% block body_class %}{{ fiber_page.title|slugify }}{% endblock %}">
+	<body class="{{ fiber_page.title|slugify }} {% block extend_body_class %}{% endblock %}">
 		<div id="page">
 			<header>
 				<div id="logo">Django Fiber example</div>
@@ -47,13 +48,12 @@
 				<section id="sidebar-right">
 					<aside>
 						{% show_page_content "sidebar_right" %}
-
 						{% show_content "address" %}
 					</aside>
 				</section>
 			</section>
 			<footer>
-				<p>&copy; 2011</p>
+				<p>&copy; {% now "Y" %}</p>
 				<nav id="secondarymenu" class="group">
 					{% show_menu "secondarymenu" 1 1 %}
 				</nav>
@@ -63,6 +63,7 @@
 		{% compress js %}
 			<script src="{{ STATIC_URL }}js/jquery-1.6.3.min.js"></script>
 			<script src="{{ STATIC_URL }}js/base.js"></script>
+			{% block extend_js %}{% endblock %}
 		{% endcompress %}
 	</body>
 </html>
