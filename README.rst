@@ -1,8 +1,8 @@
-============================
-Django Fiber example project
-============================
+===========================
+Django Fiber starting point
+===========================
 
-Start point for working with Django Fiber.
+Starting point for creating websites with Django Fiber.
 
 Using:
 ======
@@ -15,8 +15,8 @@ Installation:
 
 ::
 
-	$ git clone git@github.com:nvandijk/django-fiber-example.git
-	$ cd django-fiber-example
+	$ git clone git@github.com:nvandijk/django-fiber-starting-point.git
+	$ cd django-fiber-starting-point
 	$ pip install -r requirements.txt
 	$ cp settings_example.py settings.py
 	$ python manage.py syncdb
