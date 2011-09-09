@@ -4,11 +4,12 @@
         "model": "fiber.contentitem", 
         "fields": {
             "content_markup": "", 
-            "updated": "2011-06-08 07:03:13", 
+            "updated": "2011-09-09 23:17:53", 
             "name": "", 
             "created": "2011-06-05 04:47:59", 
+            "template_name": "", 
             "protected": false, 
-            "content_html": "<h2>\r\n\tA ContentItem in the &quot;main&quot; block</h2>\r\n<p>\r\n\t<em>Double-click to edit this ContentItem.</em></p>\r\n<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n", 
+            "content_html": "<h2>\r\n\tA ContentItem in the &quot;main&quot; block</h2>\r\n<p>\r\n\t<em>Double-click to edit this ContentItem.</em></p>\r\n<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<ul>\r\n\t<li>\r\n\t\tlist item 1</li>\r\n\t<li>\r\n\t\tlist item 2\r\n\t\t<ul>\r\n\t\t\t<li>\r\n\t\t\t\tlist item 2.1</li>\r\n\t\t\t<li>\r\n\t\t\t\tlist item 2.2</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t\tlist item 3</li>\r\n</ul>\r\n", 
             "metadata": null
         }
     }, 
@@ -20,6 +21,7 @@
             "updated": "2011-06-08 07:03:52", 
             "name": "", 
             "created": "2011-06-05 04:48:11", 
+            "template_name": "", 
             "protected": false, 
             "content_html": "<h2>\r\n\tA ContentItem in the &quot;aside&quot; block</h2>\r\n<p>\r\n\t<em>Double-click to edit this ContentItem.</em></p>\r\n<p>\r\n\tUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\r\n", 
             "metadata": null
@@ -33,6 +35,7 @@
             "updated": "2011-06-08 07:05:03", 
             "name": "address", 
             "created": "2011-06-05 04:53:32", 
+            "template_name": "", 
             "protected": false, 
             "content_html": "<h2>\r\n\tA ContentItem named &quot;address&quot;</h2>\r\n<p>\r\n\t<em>Double-click to edit this ContentItem.</em></p>\r\n", 
             "metadata": null
@@ -421,10 +424,10 @@
         "model": "fiber.page", 
         "fields": {
             "rght": 6, 
-            "updated": "2011-06-04 14:01:11", 
+            "updated": "2011-09-09 22:14:41", 
             "level": 0, 
             "parent": null, 
-            "title": "generalmenu", 
+            "title": "secondarymenu", 
             "url": "", 
             "template_name": "", 
             "created": "2011-06-04 14:01:11", 
