@@ -8,7 +8,7 @@ Using:
 ======
 
 * Gridless boilerplate (2.0)
-* jQuery (1.6.3)
+* jQuery (1.6.4)
 
 Installation:
 =============
