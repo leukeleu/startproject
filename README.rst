@@ -7,7 +7,7 @@ Starting point for creating websites with Django Fiber.
 Using:
 ======
 
-* Django Fiber (0.9.4.16)
+* Django Fiber (0.9.4.18)
 * Gridless boilerplate (2.0)
 * Compass (0.12.alpha.0)
 * jQuery (1.6.4)
