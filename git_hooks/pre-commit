@@ -1,0 +1,4 @@
+#!/bin/sh
+
+compass compile --force -c config_pre-commit.rb
+git add pages/static/css
