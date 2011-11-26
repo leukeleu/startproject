@@ -3,22 +3,16 @@ Django Fiber starting point with Compass
 ========================================
 
 Starting point for creating websites with Django Fiber.
+For a more stripped-down version with Django Fiber take a look at https://github.com/ridethepony/django-fiber-example
 
 Using:
 ======
 
-Python:
 * Django Fiber (0.9.5)
 * MySQL python (1.2.3)
 * South (0.7.3)
-
-Ruby:
 * Compass (0.12.alpha.0)
-
-CSS:
 * Gridless boilerplate (2.0)
-
-JavaScript:
 * jQuery (1.7)
 
 Installation:
@@ -39,4 +33,5 @@ Git hooks:
 
 ::
 
+	$ cd path/to/project
 	$ ln -s ../../git_hooks/pre-commit .git/hooks/pre-commit
