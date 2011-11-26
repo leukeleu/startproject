@@ -17,7 +17,7 @@ Installation:
 
 ::
 
-	$ git clone git@github.com:dbunskoek/django-fiber-starting-point.git
+	$ git clone git@github.com:nvandijk/django-fiber-starting-point.git
 	$ cd django-fiber-starting-point
 	$ pip install -r requirements.txt
 	$ cp settings_example.py settings.py
