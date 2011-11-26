@@ -1,16 +1,15 @@
 // namespace all code
+
 var DFSP = {};
 
 DFSP.init = function() {
 
 	// call base methods
-	DFSP.base.externalLinks();
-	DFSP.base.downloadLinks();
+	DFSP.external_links();
+	DFSP.download_links();
 };
 
-DFSP.base = {};
-
-DFSP.base.externalLinks = function() {
+DFSP.external_links = function() {
 	// open external links in new window
 	$('a[href*="http://"]:not([href*="' + location.hostname + '"]), a[href*="https://"]:not([href*="' + location.hostname + '"])')
 		.addClass('external')
@@ -18,7 +17,7 @@ DFSP.base.externalLinks = function() {
 		.attr('title', 'Open in nieuw venster');
 };
 
-DFSP.base.downloadLinks = function() {
+DFSP.download_links = function() {
 	// open download links in new window
 	$('a[href$=".pdf"], a[href$=".doc"], a[href$=".docx"], a[href$=".xls"], a[href$=".xlsx"], a[href$=".zip"], a[href$=".gz"]')
 		.addClass('download')
