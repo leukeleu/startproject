@@ -7,11 +7,19 @@ Starting point for creating websites with Django Fiber.
 Using:
 ======
 
+Python:
 * Django Fiber (0.9.5)
+* MySQL python (1.2.3)
 * South (0.7.3)
+
+Ruby:
 * Compass (0.12.alpha.0)
+
+CSS:
 * Gridless boilerplate (2.0)
-* jQuery (1.6.4)
+
+JavaScript:
+* jQuery (1.7)
 
 Installation:
 =============
