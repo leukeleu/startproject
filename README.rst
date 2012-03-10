@@ -8,12 +8,12 @@ For a more stripped-down version with Django Fiber take a look at https://github
 Using:
 ======
 
-* Django Fiber (0.9.5)
+* Django Fiber (0.9.6.5)
 * MySQL python (1.2.3)
 * South (0.7.3)
 * Compass (0.12.alpha.0)
 * Gridless boilerplate (2.0)
-* jQuery (1.7)
+* jQuery (1.7.1)
 
 Installation:
 =============
