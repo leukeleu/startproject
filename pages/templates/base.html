@@ -1,68 +1,68 @@
 {% load fiber_tags compress %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>{% block doc_title %}{{ fiber_page.title }}{% endblock %} - {{ site_settings.name }}</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block doc_title %}{{ fiber_page.title }}{% endblock %} - {{ site_settings.name }}</title>
 
-		{% compress css %}
-			<link href="{{ STATIC_URL }}css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-			<link href="{{ STATIC_URL }}css/print.css" media="print" rel="stylesheet" type="text/css" />
-			<!--[if IE]>
-				<link href="{{ STATIC_URL }}css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-			<![endif]-->
-		{% endcompress %}
-	</head>
+        {% compress css %}
+            <link href="{{ STATIC_URL }}css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+            <link href="{{ STATIC_URL }}css/print.css" media="print" rel="stylesheet" type="text/css" />
+            <!--[if IE]>
+                <link href="{{ STATIC_URL }}css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+            <![endif]-->
+        {% endcompress %}
+    </head>
 
-	<body class="{{ fiber_page.title|slugify }} {% block extend_body_class %}{% endblock %}">
-		<div id="page">
-			<header>
-				<div id="logo">{{ site_settings.name }}</div>
-				<nav id="mainmenu">
-					{% show_menu "mainmenu" 1 1 %}
-				</nav>
-			</header>
-			<section id="content">
-				<section id="sidebar-left">
-					<nav id="submenu">
-						{% show_menu "mainmenu" 2 3 %}
-					</nav>
-				</section>
-				<section id="main">
-					<nav id="breadcrumbs">
-						<ul>
-							{% for fiber_page in fiber_current_pages %}
-							<li>
-								<a href="{{ fiber_page.get_absolute_url }}">{{ fiber_page.title }}</a>
-							</li>
-							{% endfor %}
-						</ul>
-					</nav>
-					<article>
-						{% block title %}
-							<h1>{{ fiber_page.title }}</h1>
-						{% endblock %}
-						{% show_page_content "main" %}
-					</article>
-				</section>
-				<section id="sidebar-right">
-					<aside>
-						{% show_page_content "sidebar_right" %}
-						{% show_content "address" %}
-					</aside>
-				</section>
-			</section>
-			<footer>
-				<p>&copy; {% now "Y" %}</p>
-				<nav id="secondarymenu">
-					{% show_menu "secondarymenu" 1 1 %}
-				</nav>
-			</footer>
-		</div>
+    <body class="{{ fiber_page.title|slugify }} {% block extend_body_class %}{% endblock %}">
+        <div id="page">
+            <header>
+                <div id="logo">{{ site_settings.name }}</div>
+                <nav id="mainmenu">
+                    {% show_menu "mainmenu" 1 1 %}
+                </nav>
+            </header>
+            <section id="content">
+                <section id="sidebar-left">
+                    <nav id="submenu">
+                        {% show_menu "mainmenu" 2 3 %}
+                    </nav>
+                </section>
+                <section id="main">
+                    <nav id="breadcrumbs">
+                        <ul>
+                            {% for fiber_page in fiber_current_pages %}
+                            <li>
+                                <a href="{{ fiber_page.get_absolute_url }}">{{ fiber_page.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    <article>
+                        {% block title %}
+                            <h1>{{ fiber_page.title }}</h1>
+                        {% endblock %}
+                        {% show_page_content "main" %}
+                    </article>
+                </section>
+                <section id="sidebar-right">
+                    <aside>
+                        {% show_page_content "sidebar_right" %}
+                        {% show_content "address" %}
+                    </aside>
+                </section>
+            </section>
+            <footer>
+                <p>&copy; {% now "Y" %}</p>
+                <nav id="secondarymenu">
+                    {% show_menu "secondarymenu" 1 1 %}
+                </nav>
+            </footer>
+        </div>
 
-		{% compress js %}
-			<script src="{{ STATIC_URL }}js/jquery-1.7.1.js"></script>
-			<script src="{{ STATIC_URL }}js/base.js"></script>
-		{% endcompress %}
-	</body>
+        {% compress js %}
+            <script src="{{ STATIC_URL }}js/jquery-1.7.1.js"></script>
+            <script src="{{ STATIC_URL }}js/base.js"></script>
+        {% endcompress %}
+    </body>
 </html>
