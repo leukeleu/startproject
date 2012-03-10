@@ -11,6 +11,8 @@ urlpatterns = patterns('',
     (r'^jsi18n/$', 'django.views.i18n.javascript_catalog', {'packages': ('fiber',),}),
 
     url(r'^admin/', include(admin.site.urls)),
+
+    (r'', 'fiber.views.page'),
 )
 
 if settings.DEBUG:

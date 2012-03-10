@@ -85,7 +85,7 @@ STATICFILES_FINDERS = DEFAULT_SETTINGS.STATICFILES_FINDERS + (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '%-$o$r0p4xqkwx)w$$r2-r^s9%%a^7$d76ygv2s+2*lxv+g+yc'
+SECRET_KEY = ''
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -97,7 +97,6 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = DEFAULT_SETTINGS.MIDDLEWARE_CLASSES + (
     'fiber.middleware.ObfuscateEmailAddressMiddleware',
     'fiber.middleware.AdminPageMiddleware',
-    'fiber.middleware.PageFallbackMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
@@ -115,6 +114,12 @@ TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
 )
 
 INSTALLED_APPS = (
+    'piston',
+    'mptt',
+    'compressor',
+    'fiber',
+    'pages',
+    'south',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -122,12 +127,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'piston',
-    'mptt',
-    'compressor',
-    'fiber',
-    'pages',
-    'south',
 )
 
 # A sample logging configuration. The only tangible logging
