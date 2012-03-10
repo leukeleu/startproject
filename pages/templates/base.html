@@ -20,18 +20,18 @@
 		<div id="page">
 			<header>
 				<div id="logo">{{ site_settings.name }}</div>
-				<nav id="mainmenu" class="group">
+				<nav id="mainmenu">
 					{% show_menu "mainmenu" 1 1 %}
 				</nav>
 			</header>
-			<section id="content" class="group">
+			<section id="content">
 				<section id="sidebar-left">
 					<nav id="submenu">
 						{% show_menu "mainmenu" 2 3 %}
 					</nav>
 				</section>
 				<section id="main">
-					<nav id="breadcrumbs" class="group">
+					<nav id="breadcrumbs">
 						<ul>
 							{% for fiber_page in fiber_current_pages %}
 							<li>
@@ -56,7 +56,7 @@
 			</section>
 			<footer>
 				<p>&copy; {% now "Y" %}</p>
-				<nav id="secondarymenu" class="group">
+				<nav id="secondarymenu">
 					{% show_menu "secondarymenu" 1 1 %}
 				</nav>
 			</footer>

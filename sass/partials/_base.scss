@@ -28,6 +28,8 @@ header {
 
 #content {
 
+    @extend .clearfix;
+
 	#sidebar-left,
 	#sidebar-right,
 	#main {

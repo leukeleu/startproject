@@ -343,16 +343,16 @@ sub {
 	* Micro clearfix hack, more semantically titled with 'group'
 	* Source: nicolasgallagher.com/micro-clearfix-hack/
 */
-.group:before, .group:after {
+.group:before, .clearfix:before, #content:before, .group:after, .clearfix:after, #content:after {
   content: "";
   display: table;
 }
 
-.group:after {
+.group:after, .clearfix:after, #content:after {
   clear: both;
 }
 
-.group {
+.group, .clearfix, #content {
   *zoom: 1;
 }
 
