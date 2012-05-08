@@ -12,9 +12,9 @@ Using:
 * Django Fiber (0.9.6.6)
 * MySQL python (1.2.3)
 * South (0.7.3)
-* Compass (0.12.alpha.0)
+* Compass (0.12.1)
 * Gridless boilerplate (2.0)
-* jQuery (1.7.1)
+* jQuery (1.7.2)
 
 Installation:
 =============
