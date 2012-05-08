@@ -8,7 +8,8 @@ For a more stripped-down version with Django Fiber take a look at https://github
 Using:
 ======
 
-* Django Fiber (0.9.6.5)
+* Django (1.4)
+* Django Fiber (0.9.6.6)
 * MySQL python (1.2.3)
 * South (0.7.3)
 * Compass (0.12.alpha.0)
