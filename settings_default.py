@@ -154,8 +154,5 @@ LOGGING = {
 
 SITE_SETTINGS = {
     'name': 'Django Fiber starting point',
-    'api_keys': {
-        'google_maps': '',
-        'google_analytics': '',
-    }
+    'google_analytics_tracking_id': '',
 }
