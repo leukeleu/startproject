@@ -1,0 +1,130 @@
+/* menus */
+
+/* mainmenu */
+
+#mainmenu {
+
+    ul {
+        margin: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 20px 0 0;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #666;
+            }
+
+            a:hover,
+            &.current a {
+                color: #f30;
+            }
+        }
+    }
+}
+
+/* submenu */
+
+#submenu {
+
+    ul {
+        margin: 0;
+
+        li {
+            list-style: none;
+
+            ul li {
+                padding-left: 15px;
+            }
+
+            a {
+                font-size: 14px;
+                text-decoration: none;
+                color: #666;
+            }
+
+            a:hover,
+            &.current a {
+                color: #f30;
+            }
+
+            &.current ul li {
+
+                a {
+                    color: #666;
+                }
+
+                a:hover,
+                &.current a {
+                    color: #f30;
+                }
+            }
+        }
+    }
+}
+
+/* secondarymenu */
+
+#secondarymenu {
+    display: inline-block;
+
+    ul {
+        margin: 0;
+
+        li {
+            display: inline-block;
+            font-size: 12px;
+
+            &:before {
+                padding: 0 5px;
+                content: '|';
+            }
+
+            a {
+                text-decoration: none;
+                color: #666;
+            }
+
+            a:hover,
+            &.current a {
+                color: #f30;
+            }
+        }
+    }
+}
+
+/* breadcrumbs */
+
+#breadcrumbs {
+    margin: 0 0 20px 0;
+
+    ul {
+        margin: 0;
+
+        li {
+            display: inline-block;
+            font-size: 12px;
+            text-transform: lowercase;
+
+            &:after {
+                content: '»';
+            }
+
+            &:last-child:after {
+                content: '';
+            }
+
+            a {
+                text-decoration: none;
+                color: #666;
+            }
+        }
+    }
+}

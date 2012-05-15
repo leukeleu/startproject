@@ -1,3 +1,20 @@
+/* imports */
+/* vars */
+/* mixins */
+/* classes */
+.clearfix:before, #main:before, .clearfix:after, #main:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after, #main:after {
+  clear: both;
+}
+
+.clearfix, #main {
+  *zoom: 1;
+}
+
 /*
 	* Gridless version 2.0
 
@@ -343,16 +360,16 @@ sub {
 	* Micro clearfix hack, more semantically titled with 'group'
 	* Source: nicolasgallagher.com/micro-clearfix-hack/
 */
-.group:before, .clearfix:before, #content:before, .group:after, .clearfix:after, #content:after {
+.group:before, .group:after {
   content: "";
   display: table;
 }
 
-.group:after, .clearfix:after, #content:after {
+.group:after {
   clear: both;
 }
 
-.group, .clearfix, #content {
+.group {
   *zoom: 1;
 }
 
@@ -422,10 +439,7 @@ sub {
     page-break-after: avoid;
   }
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial;
-}
-
+/* layout */
 /* body */
 body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -448,22 +462,22 @@ header #logo {
   font-size: 32px;
 }
 
-/* content */
-#content #sidebar-left,
-#content #sidebar-right,
-#content #main {
+/* main */
+#main #sidebar-left,
+#main #sidebar-right,
+#main #content {
   float: left;
   margin: 0 10px;
   width: 180px;
   min-height: 10px;
 }
-#content #main {
+#main #content {
   width: 540px;
 }
 
 /* footer */
 footer {
-  margin: 10px 10px 60px 10px;
+  padding: 10px 10px 60px 10px;
 }
 footer p {
   display: inline-block;
@@ -471,6 +485,7 @@ footer p {
   font-size: 12px;
 }
 
+/* menus */
 /* mainmenu */
 #mainmenu ul {
   margin: 0;
@@ -564,70 +579,65 @@ footer p {
 }
 
 /* content formatting */
+/* reset heading styling gridless boilerplate */
 h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   margin: 0 0 0.5em 0;
   font-family: 'Helvetica Neue';
   font-weight: bold;
 }
-
-h1 {
+.content h1 {
   font-size: 32px;
 }
-
-h2 {
+.content h2 {
   font-size: 16px;
 }
-
-h3 {
+.content h3 {
   font-size: 14px;
 }
-
-ul,
-ol,
-p {
+.content ul,
+.content ol,
+.content p {
   margin-bottom: 1.5em;
   font-size: 14px;
 }
-
-table {
+.content table {
   margin: 0 0 1.5em 0;
   border: 1px solid #333;
   width: 100%;
 }
-table tr th,
-table tr td {
+.content table tr th,
+.content table tr td {
   border: 1px solid #333;
   display: table-cell;
   padding: 5px;
   vertical-align: top;
 }
-table tr th {
+.content table tr th {
   color: #fff;
   background-color: #555;
 }
-
-a {
+.content a {
   color: #f30;
   text-decoration: underline;
 }
-a:hover {
+.content a:hover {
   text-decoration: none;
 }
-
-img {
+.content img {
   float: left;
   margin: 0 5px 10px 0;
 }
-
-strong {
+.content strong {
   font-weight: bold;
 }
-
-em {
+.content em {
   font-style: italic;
 }
-
-ul li ul,
-ol li ol {
+.content ul li ul,
+.content ol li ol {
   margin-bottom: 0;
 }

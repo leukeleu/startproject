@@ -1,0 +1,81 @@
+/* content formatting */
+
+/* reset heading styling gridless boilerplate */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial;
+}
+
+.content {
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 0.5em 0;
+        font-family: 'Helvetica Neue';
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    ul,
+    ol,
+    p {
+        margin-bottom: 1.5em;
+        font-size: 14px;
+    }
+
+    table {
+        margin: 0 0 1.5em 0;
+        border: 1px solid #333;
+        width: 100%;
+
+        tr th,
+        tr td {
+            border: 1px solid #333;
+            display: table-cell;
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        tr th {
+            color: #fff;
+            background-color: #555;
+        }
+    }
+
+    a {
+        color: #f30;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        float: left;
+        margin: 0 5px 10px 0;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    ul li ul,
+    ol li ol {
+        margin-bottom: 0;
+    }
+}
