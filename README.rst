@@ -32,7 +32,11 @@ Installation:
 Git hooks:
 ==========
 
+Git pre-commit hook for compiling clean .css files.
+
 ::
 
-	$ cd path/to/project
-	$ ln -s ../../git_hooks/pre-commit .git/hooks/pre-commit
+    #!/bin/sh
+
+    compass compile --force -c config_clean_css.rb
+    git add pages/static/css
