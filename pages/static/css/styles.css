@@ -600,32 +600,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content ul,
 .content ol,
-.content p {
+.content p,
+.content table {
   margin-bottom: 1.5em;
   font-size: 14px;
 }
 .content table {
-  margin: 0 0 1.5em 0;
-  border: 1px solid #333;
   width: 100%;
 }
 .content table tr th,
 .content table tr td {
-  border: 1px solid #333;
   display: table-cell;
+  border: 1px solid #eee;
   padding: 5px;
   vertical-align: top;
 }
 .content table tr th {
-  color: #fff;
-  background-color: #555;
+  background-color: #eee;
 }
 .content a {
   color: #f30;
-  text-decoration: underline;
-}
-.content a:hover {
-  text-decoration: none;
 }
 .content img {
   float: left;

@@ -28,37 +28,30 @@ h1, h2, h3, h4, h5, h6 {
 
     ul,
     ol,
-    p {
+    p,
+    table {
         margin-bottom: 1.5em;
         font-size: 14px;
     }
 
     table {
-        margin: 0 0 1.5em 0;
-        border: 1px solid #333;
         width: 100%;
 
         tr th,
         tr td {
-            border: 1px solid #333;
             display: table-cell;
+            border: 1px solid #eee;
             padding: 5px;
             vertical-align: top;
         }
 
         tr th {
-            color: #fff;
-            background-color: #555;
+            background-color: #eee;
         }
     }
 
     a {
         color: #f30;
-        text-decoration: underline;
-
-        &:hover {
-            text-decoration: none;
-        }
     }
 
     img {
