@@ -9,9 +9,9 @@ Using:
 ======
 
 * Django (1.4)
-* Django Fiber (0.9.6.6)
+* Django Fiber (0.9.7)
 * MySQL python (1.2.3)
-* South (0.7.3)
+* South (0.7.5)
 * Compass (0.12.1)
 * Gridless boilerplate (2.0)
 * jQuery (1.7.2)
@@ -39,4 +39,4 @@ Git pre-commit hook for compiling clean .css files.
     #!/bin/sh
 
     compass compile --force -c config_clean_css.rb
-    git add pages/static/css
+    git add project/static/css

@@ -107,15 +107,15 @@ TEMPLATE_DIRS = (
 
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
     'django.core.context_processors.request',
-    'pages.context_processors.site_settings',
+    'project.context_processors.site_settings',
 )
 
 INSTALLED_APPS = (
     'mptt',
     'compressor',
-    'fiber',
-    'pages',
     'south',
+    'fiber',
+    'project',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
