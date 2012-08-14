@@ -441,11 +441,6 @@ sub {
 }
 /* layout */
 /* body */
-body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  color: #666;
-}
-
 /* page */
 #page {
   margin: 0 auto;
@@ -579,25 +574,64 @@ footer p {
 }
 
 /* content formatting */
-/* reset heading styling gridless boilerplate */
-h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial;
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+  color: #666;
 }
 
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+a,
+a:active,
+a:visited {
+  color: #666;
+}
+
+a:hover {
+  color: #f30;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6,
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
   margin: 0 0 0.5em 0;
-  font-family: 'Helvetica Neue';
   font-weight: bold;
 }
+article h1,
+aside h1,
 .content h1 {
   font-size: 32px;
 }
+article h2,
+aside h2,
 .content h2 {
   font-size: 16px;
 }
+article h3,
+aside h3,
 .content h3 {
   font-size: 14px;
 }
+article ul,
+article ol,
+article p,
+article table,
+aside ul,
+aside ol,
+aside p,
+aside table,
 .content ul,
 .content ol,
 .content p,
@@ -605,9 +639,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5em;
   font-size: 14px;
 }
+article table,
+aside table,
 .content table {
   width: 100%;
 }
+article table tr th,
+article table tr td,
+aside table tr th,
+aside table tr td,
 .content table tr th,
 .content table tr td {
   display: table-cell;
@@ -615,22 +655,36 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   vertical-align: top;
 }
+article table tr th,
+aside table tr th,
 .content table tr th {
   background-color: #eee;
 }
+article a,
+aside a,
 .content a {
   color: #f30;
 }
+article img,
+aside img,
 .content img {
   float: left;
   margin: 0 5px 10px 0;
 }
+article strong,
+aside strong,
 .content strong {
   font-weight: bold;
 }
+article em,
+aside em,
 .content em {
   font-style: italic;
 }
+article ul li ul,
+article ol li ol,
+aside ul li ul,
+aside ol li ol,
 .content ul li ul,
 .content ol li ol {
   margin-bottom: 0;
