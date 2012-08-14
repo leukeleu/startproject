@@ -38,5 +38,5 @@ Git pre-commit hook for compiling clean .css files.
 
     #!/bin/sh
 
-    compass compile --force -c config_clean_css.rb
+    compass compile src --force --config src/config_clean_css.rb
     git add *.css
