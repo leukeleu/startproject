@@ -1,6 +1,6 @@
-========================================
-Django Fiber starting point with Compass
-========================================
+===========================
+Django Fiber starting point
+===========================
 
 Starting point for creating websites with Django Fiber.
 For a more stripped-down version with Django Fiber take a look at https://github.com/ridethepony/django-fiber-example
