@@ -111,11 +111,16 @@ TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
 )
 
 INSTALLED_APPS = (
+    # project apps
+    'project',
+
+    # Generic apps
     'mptt',
     'compressor',
     'south',
     'fiber',
-    'project',
+
+    # Django
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -153,6 +158,16 @@ LOGGING = {
         },
     }
 }
+
+# Fiber
+IMAGES_DIR = 'uploads/images'
+FILES_DIR = 'uploads/files'
+
+FIBER_DEFAULT_TEMPLATE = 'base.html'
+
+FIBER_TEMPLATE_CHOICES = [
+    ('', 'Default'),
+]
 
 SITE_SETTINGS = {
     'name': 'Django Fiber starting point',
