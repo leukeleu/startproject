@@ -1,11 +1,24 @@
 /* menus */
 
+nav {
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
 /* mainmenu */
 
 #mainmenu {
 
     ul {
-        margin: 0;
 
         li {
             display: inline-block;
@@ -35,10 +48,8 @@
 #submenu {
 
     ul {
-        margin: 0;
 
         li {
-            list-style: none;
 
             ul li {
                 padding-left: 15px;
@@ -106,7 +117,6 @@
     margin: 0 0 20px 0;
 
     ul {
-        margin: 0;
 
         li {
             display: inline-block;

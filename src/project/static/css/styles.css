@@ -2,462 +2,430 @@
 /* vars */
 /* mixins */
 /* classes */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_base\.scss}line{font-family:\000039}}
 .clearfix:before, #main:before, .clearfix:after, #main:after {
   content: "";
   display: table;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_base\.scss}line{font-family:\0000314}}
 .clearfix:after, #main:after {
   clear: both;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_base\.scss}line{font-family:\0000318}}
 .clearfix, #main {
   *zoom: 1;
 }
 
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
 /*
-	* Gridless version 2.0
-
-	* Credit is left inline and big thanks to Nicolas Gallagher and Jonathan Neal
-
-	* Across this document we use safe CSS hacks: http://mathiasbynens.be/notes/safe-css-hacks
-	* Selectors beggining with an underscore (_selector: property) target only IE6
-	* Selectors beggining with an asterisk (*selector: property) target only IE6 and IE7
-*/
-/* HTML5 display definitions
----------------------------------------- */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
+ * Corrects `block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000321}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block;
 }
 
-/* Corrects inline-block not defined in IE6/7/8 and FF3 */
-audio, canvas, video {
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000331}}
+audio,
+canvas,
+video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000340}}
 audio:not([controls]) {
   display: none;
+  height: 0;
 }
 
-/* Ensures content is hidden from all presentations, including screenreaders */
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000349}}
 [hidden] {
   display: none;
-  visibility: hidden;
 }
 
-/* Base structure
----------------------------------------- */
+/* ==========================================================================
+   Base
+   ========================================================================== */
 /*
-	* The body will work like a 'div#wrapper' (for this to work, the 'body' needs to have a set width)
-
-	* To add a background to the PAGE, set it in the 'html' element
-	* To add a background to the WRAPPER, set it in the 'body' element
-*/
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000363}}
 html {
-  height: 100%;
-  font-size: 100%;
-  overflow-y: scroll;
-  /* Force a scrollbar in non-IE */
+  font-family: sans-serif;
+  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* Prevent iOS text size adjust on orientation change without disabling user zoom */
+  /* 2 */
   -ms-text-size-adjust: 100%;
+  /* 2 */
 }
 
-body {
-  margin: 0 auto;
-  min-height: 100%;
-}
-
-/* Fonts settings based on the 100E2R standard: http://www.informationarchitects.jp/en/100e2r/ */
-body, button, input, select, textarea {
-  font: 1em/1.625 Georgia, serif;
-  color: #222;
-  /* Full black on white is too much contrast, #222 is a better default */
-}
-
-/* Add and/or remove tags as your baseline grid needs */
-p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldset, menu, h4, h5, h6, img, figure, figcaption, button, hr {
-  margin: 0 0 1.625em;
-}
-
-/* Headings/small
----------------------------------------- */
 /*
-	* Font sizes are based on the golden ratio of 16
-	* See this for the modular scale: ow.ly/5jGl6
-	* Line-heights and margins are adjusted to keep a 26px (1.625em) vertical rhythm across elements 
-*/
-h1, h2, h3, h4, h5, h6 {
-  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', FreeSerif, Georgia, serif;
-  font-size: 1em;
+ * Removes default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000373}}
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000385}}
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\0000394}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003107}}
+h1 {
+  font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003115}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003124}}
+b,
+strong {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 4.25em;
-  /* 68px */
-  line-height: 1.1471em;
-  margin: 0 0 0.3824em;
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003132}}
+dfn {
+  font-style: italic;
 }
 
-h2 {
-  font-size: 2.625em;
-  /* 42px */
-  line-height: 1.2381em;
-  margin: 0 0 0.619em;
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003140}}
+mark {
+  background: #ff0;
+  color: #000;
 }
 
-h3 {
-  font-size: 1.625em;
-  /* 26px */
-  line-height: 1em;
-  margin: 0 0 1em;
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003153}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
 }
 
-small {
-  font-size: 0.625em;
-  /* 10px */
-  margin: 0 0 2.6em;
-}
-
-/* Preformatted text and code
----------------------------------------- */
-/* Allows line wrapping of 'pre' */
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003162}}
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-pre, code, kbd, samp {
-  font: 1em/1.625em Menlo, Consolas, "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace;
+/*
+ * Sets consistent quote types.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003172}}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* Tables
----------------------------------------- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003180}}
+small {
+  font-size: 80%;
 }
 
-th {
-  text-align: left;
-}
-
-tr, th, td {
-  padding-right: 1.625em;
-}
-
-/* Forms
----------------------------------------- */
-form {
-  margin: 0;
-}
-
-fieldset {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-legend {
-  border: 0;
-  *margin-left: -7px;
-}
-
-button, input, select, textarea {
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-button, input {
-  line-height: normal;
-  *overflow: visible;
-}
-
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
-table button, table input {
-  *overflow: auto;
-}
-
-/* Quotes
----------------------------------------- */
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-blockquote, q, cite {
-  font-style: italic;
-}
-
-blockquote {
-  padding-left: 1.625em;
-  border-left: 1px solid #ddd;
-}
-
-blockquote > p {
-  padding: 0;
-}
-
-/* Lists
----------------------------------------- */
-ul, ol {
-  list-style-position: inside;
-  padding: 0;
-}
-
-li ul, li ol {
-  margin: 0 1.625em;
-}
-
-dl dd {
-  margin-left: 1.625em;
-}
-
-/* Links
----------------------------------------- */
-a, a:visited {
-  text-decoration: none;
-  color: #06c;
-}
-
-a:hover {
-  border-bottom: 1px solid;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-/* Better CSS outline suppression: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active {
-  outline: none;
-}
-
-/* Figures
----------------------------------------- */
-figure {
-  margin: 0;
-}
-
-/* Embedded content
----------------------------------------- */
-img, object, video {
-  max-width: 100%;
-  /* Automatically scales images larger than the container. Consider this first: http://unstoppablerobotninja.com/entry/fluid-images/ */
-  /* _width: 100%; /* IE6 doesn't support max-width, so we just use width. If the image is larger than the container, just uncomment this. If it is smaller than the container, uncomment and change the 100% value to an absolute one */
-}
-
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  /* Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images */
-}
-
-/* Corrects overflow displayed oddly in IE9 */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Abbreviations
----------------------------------------- */
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-/* Marked/inserted/deleted text
----------------------------------------- */
-mark {
-  background: #ff0;
-}
-
-ins {
-  text-decoration: none;
-  background: #ff9;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-/* Others
----------------------------------------- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-}
-
-strong, b, dt {
-  font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
-}
-
-var, address {
-  font-style: normal;
-}
-
-/* Position 'sub' and 'sup' without affecting line-height: gist.github.com/413930 */
-sub, sup {
-  font-size: 0.625em;
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003189}}
+sub,
+sup {
+  font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003196}}
 sup {
   top: -0.5em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003200}}
 sub {
   bottom: -0.25em;
 }
 
-/* Helper classes
----------------------------------------- */
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
 /*
-	* Micro clearfix hack, more semantically titled with 'group'
-	* Source: nicolasgallagher.com/micro-clearfix-hack/
-*/
-.group:before, .group:after {
-  content: "";
-  display: table;
+ * Removes border when inside `a` element in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003212}}
+img {
+  border: 0;
 }
 
-.group:after {
-  clear: both;
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003220}}
+svg:not(:root) {
+  overflow: hidden;
 }
 
-.group {
-  *zoom: 1;
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003232}}
+figure {
+  margin: 0;
 }
 
-/* Primary styles
----------------------------------------- */
-/* Media queries
----------------------------------------- */
-/* The media queries included in here are only placeholder. Modify them as your content requires */
-@media only screen and (min-width: 480px) {
-  /* Wide mobile (480px+) styles go here */
-}
-@media only screen and (min-width: 768px) {
-  /* Tablets/netbooks (768px+) styles go here */
-}
-@media only screen and (min-width: 1024px) {
-  /* Desktops (1024px+) styles go here */
-}
-/* Print styles
----------------------------------------- */
-/* Print styles inlined to avoid extra HTTP connection */
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    /* Black prints faster: sanbeiji.com/archives/953 */
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
-
-  a, a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* Do not show javascript and internal links */
-  a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
-
-  /* Printing Tables: css-discuss.incutio.com/wiki/Printing_Tables */
-  thead {
-    display: table-header-group;
-  }
-
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  @page {
-    margin: 0.5cm;
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003244}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2, h3 {
-    page-break-after: avoid;
-  }
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003255}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003269}}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003281}}
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003296}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003306}}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003316}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003327}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003340}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003349}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003359}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/library\/_normalize-2\.0\.1\.scss}line{font-family:\00003372}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* layout */
 /* body */
 /* page */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000311}}
 #page {
   margin: 0 auto;
   width: 960px;
 }
 
 /* header */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000318}}
 header {
   margin: 10px;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000323}}
 header #logo {
+  margin: 0 0 10px 0;
   font-size: 32px;
 }
 
 /* main */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000337}}
 #main #sidebar-left,
 #main #sidebar-right,
 #main #content {
@@ -466,14 +434,17 @@ header #logo {
   width: 180px;
   min-height: 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000344}}
 #main #content {
   width: 540px;
 }
 
 /* footer */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000351}}
 footer {
   padding: 10px 10px 60px 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_layout\.scss}line{font-family:\0000354}}
 footer p {
   display: inline-block;
   margin: 0;
@@ -481,118 +452,138 @@ footer p {
 }
 
 /* menus */
-/* mainmenu */
-#mainmenu ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\000035}}
+nav ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000310}}
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* mainmenu */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000323}}
 #mainmenu ul li {
   display: inline-block;
   padding: 0 20px 0 0;
   font-size: 12px;
   text-transform: uppercase;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000329}}
 #mainmenu ul li:last-child {
   padding-right: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000333}}
 #mainmenu ul li a {
   text-decoration: none;
   color: #666;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000339}}
 #mainmenu ul li a:hover, #mainmenu ul li.current a {
   color: #f30;
 }
 
 /* submenu */
-#submenu ul {
-  margin: 0;
-}
-#submenu ul li {
-  list-style: none;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000354}}
 #submenu ul li ul li {
   padding-left: 15px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000358}}
 #submenu ul li a {
   font-size: 14px;
   text-decoration: none;
   color: #666;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000365}}
 #submenu ul li a:hover, #submenu ul li.current a {
   color: #f30;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000371}}
 #submenu ul li.current ul li a {
   color: #666;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000376}}
 #submenu ul li.current ul li a:hover, #submenu ul li.current ul li.current a {
   color: #f30;
 }
 
 /* secondarymenu */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000386}}
 #secondarymenu {
   display: inline-block;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000389}}
 #secondarymenu ul {
   margin: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000392}}
 #secondarymenu ul li {
   display: inline-block;
   font-size: 12px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\0000396}}
 #secondarymenu ul li:before {
   padding: 0 5px;
   content: '|';
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003101}}
 #secondarymenu ul li a {
   text-decoration: none;
   color: #666;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003107}}
 #secondarymenu ul li a:hover, #secondarymenu ul li.current a {
   color: #f30;
 }
 
 /* breadcrumbs */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003116}}
 #breadcrumbs {
   margin: 0 0 20px 0;
 }
-#breadcrumbs ul {
-  margin: 0;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003121}}
 #breadcrumbs ul li {
   display: inline-block;
   font-size: 12px;
   text-transform: lowercase;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003126}}
 #breadcrumbs ul li:after {
   content: '»';
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003130}}
 #breadcrumbs ul li:last-child:after {
   content: '';
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_menus\.scss}line{font-family:\00003134}}
 #breadcrumbs ul li a {
   text-decoration: none;
   color: #666;
 }
 
 /* content formatting */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\000033}}
 body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
   color: #666;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000310}}
 a,
 a:active,
 a:visited {
   color: #666;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000314}}
 a:hover {
   color: #f30;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000322}}
 article h1, article h2, article h3, article h4, article h5, article h6,
 aside h1,
 aside h2,
@@ -609,21 +600,25 @@ aside h6,
   margin: 0 0 0.5em 0;
   font-weight: bold;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000327}}
 article h1,
 aside h1,
 .content h1 {
   font-size: 32px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000331}}
 article h2,
 aside h2,
 .content h2 {
   font-size: 16px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000335}}
 article h3,
 aside h3,
 .content h3 {
   font-size: 14px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000342}}
 article ul,
 article ol,
 article p,
@@ -639,11 +634,13 @@ aside table,
   margin-bottom: 1.5em;
   font-size: 14px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000347}}
 article table,
 aside table,
 .content table {
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000351}}
 article table tr th,
 article table tr td,
 aside table tr th,
@@ -655,32 +652,38 @@ aside table tr td,
   padding: 5px;
   vertical-align: top;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000358}}
 article table tr th,
 aside table tr th,
 .content table tr th {
   background-color: #eee;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000363}}
 article a,
 aside a,
 .content a {
   color: #f30;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000367}}
 article img,
 aside img,
 .content img {
   float: left;
   margin: 0 5px 10px 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000372}}
 article strong,
 aside strong,
 .content strong {
   font-weight: bold;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000376}}
 article em,
 aside em,
 .content em {
   font-style: italic;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nvandijk\/projects\/django-fiber-starting-point\/src\/sass\/partials\/_content\.scss}line{font-family:\0000381}}
 article ul li ul,
 article ol li ol,
 aside ul li ul,
