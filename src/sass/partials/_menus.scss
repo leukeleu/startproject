@@ -10,6 +10,16 @@ nav {
         li {
             margin: 0;
             padding: 0;
+
+            a {
+                text-decoration: none;
+                color: #666;
+            }
+
+            a:hover,
+            &.current a {
+                color: #f30;
+            }
         }
     }
 }
@@ -23,22 +33,7 @@ nav {
         li {
             display: inline-block;
             padding: 0 20px 0 0;
-            font-size: 12px;
             text-transform: uppercase;
-
-            &:last-child {
-                padding-right: 0;
-            }
-
-            a {
-                text-decoration: none;
-                color: #666;
-            }
-
-            a:hover,
-            &.current a {
-                color: #f30;
-            }
         }
     }
 }
@@ -53,17 +48,6 @@ nav {
 
             ul li {
                 padding-left: 15px;
-            }
-
-            a {
-                font-size: 14px;
-                text-decoration: none;
-                color: #666;
-            }
-
-            a:hover,
-            &.current a {
-                color: #f30;
             }
 
             &.current ul li {
@@ -97,16 +81,6 @@ nav {
                 padding: 0 5px;
                 content: '|';
             }
-
-            a {
-                text-decoration: none;
-                color: #666;
-            }
-
-            a:hover,
-            &.current a {
-                color: #f30;
-            }
         }
     }
 }
@@ -129,11 +103,6 @@ nav {
 
             &:last-child:after {
                 content: '';
-            }
-
-            a {
-                text-decoration: none;
-                color: #666;
             }
         }
     }

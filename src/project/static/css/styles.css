@@ -381,6 +381,7 @@ header {
 header #logo {
   margin: 0 0 10px 0;
   font-size: 32px;
+  font-weight: bold;
 }
 
 /* main */
@@ -416,36 +417,24 @@ nav ul li {
   margin: 0;
   padding: 0;
 }
+nav ul li a {
+  text-decoration: none;
+  color: #666;
+}
+nav ul li a:hover, nav ul li.current a {
+  color: #f30;
+}
 
 /* mainmenu */
 #mainmenu ul li {
   display: inline-block;
   padding: 0 20px 0 0;
-  font-size: 12px;
   text-transform: uppercase;
-}
-#mainmenu ul li:last-child {
-  padding-right: 0;
-}
-#mainmenu ul li a {
-  text-decoration: none;
-  color: #666;
-}
-#mainmenu ul li a:hover, #mainmenu ul li.current a {
-  color: #f30;
 }
 
 /* submenu */
 #submenu ul li ul li {
   padding-left: 15px;
-}
-#submenu ul li a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #666;
-}
-#submenu ul li a:hover, #submenu ul li.current a {
-  color: #f30;
 }
 #submenu ul li.current ul li a {
   color: #666;
@@ -469,13 +458,6 @@ nav ul li {
   padding: 0 5px;
   content: '|';
 }
-#secondarymenu ul li a {
-  text-decoration: none;
-  color: #666;
-}
-#secondarymenu ul li a:hover, #secondarymenu ul li.current a {
-  color: #f30;
-}
 
 /* breadcrumbs */
 #breadcrumbs {
@@ -492,25 +474,13 @@ nav ul li {
 #breadcrumbs ul li:last-child:after {
   content: '';
 }
-#breadcrumbs ul li a {
-  text-decoration: none;
-  color: #666;
-}
 
 /* content formatting */
 body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+  font-size: 14px;
+  line-height: 1.5;
   color: #666;
-}
-
-a,
-a:active,
-a:visited {
-  color: #666;
-}
-
-a:hover {
-  color: #f30;
 }
 
 article h1, article h2, article h3, article h4, article h5, article h6,
@@ -519,29 +489,21 @@ aside h2,
 aside h3,
 aside h4,
 aside h5,
-aside h6,
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
+aside h6 {
   margin: 0 0 0.5em 0;
   font-weight: bold;
+  line-height: 1;
 }
 article h1,
-aside h1,
-.content h1 {
+aside h1 {
   font-size: 32px;
 }
 article h2,
-aside h2,
-.content h2 {
+aside h2 {
   font-size: 16px;
 }
 article h3,
-aside h3,
-.content h3 {
+aside h3 {
   font-size: 14px;
 }
 article ul,
@@ -551,61 +513,70 @@ article table,
 aside ul,
 aside ol,
 aside p,
-aside table,
-.content ul,
-.content ol,
-.content p,
-.content table {
-  margin-bottom: 1.5em;
+aside table {
+  margin: 0 0 1.5em 0;
   font-size: 14px;
 }
+article ul,
+article ol,
+aside ul,
+aside ol {
+  padding: 0;
+}
+article ul li ul,
+article ul li ol,
+article ol li ul,
+article ol li ol,
+aside ul li ul,
+aside ul li ol,
+aside ol li ul,
+aside ol li ol {
+  margin-bottom: 0;
+  padding-left: 40px;
+}
 article table,
-aside table,
-.content table {
+aside table {
   width: 100%;
 }
 article table tr th,
 article table tr td,
 aside table tr th,
-aside table tr td,
-.content table tr th,
-.content table tr td {
-  display: table-cell;
+aside table tr td {
   border: 1px solid #eee;
   padding: 5px;
   vertical-align: top;
 }
 article table tr th,
-aside table tr th,
-.content table tr th {
+aside table tr th {
   background-color: #eee;
 }
 article a,
-aside a,
-.content a {
+aside a {
+  border-bottom: 1px solid;
+  text-decoration: none;
   color: #f30;
 }
+article a:hover,
+aside a:hover {
+  border-bottom: none;
+}
 article img,
-aside img,
-.content img {
+aside img {
   float: left;
   margin: 0 5px 10px 0;
 }
 article strong,
-aside strong,
-.content strong {
+aside strong {
   font-weight: bold;
 }
 article em,
-aside em,
-.content em {
+aside em {
   font-style: italic;
 }
-article ul li ul,
-article ol li ol,
-aside ul li ul,
-aside ol li ol,
-.content ul li ul,
-.content ol li ol {
-  margin-bottom: 0;
+
+aside ul,
+aside ol,
+aside p,
+aside table {
+  font-size: 12px;
 }

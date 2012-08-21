@@ -2,26 +2,18 @@
 
 body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+    font-size: 14px;
+    line-height: 1.5;
     color: #666;
-}
-
-a,
-a:active,
-a:visited {
-    color: #666;
-}
-
-a:hover {
-    color: #f30;
 }
 
 article,
-aside,
-.content {
+aside {
 
     h1, h2, h3, h4, h5, h6 {
         margin: 0 0 0.5em 0;
         font-weight: bold;
+        line-height: 1;
     }
 
     h1 {
@@ -40,8 +32,19 @@ aside,
     ol,
     p,
     table {
-        margin-bottom: 1.5em;
+        margin: 0 0 1.5em 0;
         font-size: 14px;
+    }
+
+    ul,
+    ol {
+        padding: 0;
+
+        li ul,
+        li ol {
+            margin-bottom: 0;
+            padding-left: 40px;
+        }
     }
 
     table {
@@ -49,7 +52,6 @@ aside,
 
         tr th,
         tr td {
-            display: table-cell;
             border: 1px solid #eee;
             padding: 5px;
             vertical-align: top;
@@ -61,7 +63,13 @@ aside,
     }
 
     a {
+        border-bottom: 1px solid;
+        text-decoration: none;
         color: #f30;
+
+        &:hover {
+            border-bottom: none;
+        }
     }
 
     img {
@@ -76,9 +84,14 @@ aside,
     em {
         font-style: italic;
     }
+}
 
-    ul li ul,
-    ol li ol {
-        margin-bottom: 0;
+aside {
+
+    ul,
+    ol,
+    p,
+    table {
+        font-size: 12px;
     }
 }
