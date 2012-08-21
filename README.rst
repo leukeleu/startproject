@@ -9,11 +9,11 @@ Using:
 ======
 
 * Django (1.4.1)
-* Django Fiber (0.9.7.1)
+* Django Fiber (0.9.7.2)
 * MySQL python (1.2.3)
 * South (0.7.5)
 * Compass (0.12.2)
-* Gridless boilerplate (2.0)
+* Normalize (2.0.1)
 * jQuery (1.7.2)
 
 Installation:
