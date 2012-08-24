@@ -2,7 +2,7 @@ import os
 
 import django.conf.global_settings as DEFAULT_SETTINGS
 
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+BASE_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -97,7 +97,10 @@ MIDDLEWARE_CLASSES = DEFAULT_SETTINGS.MIDDLEWARE_CLASSES + (
     'fiber.middleware.AdminPageMiddleware',
 )
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'myproject.urls'
+
+# Python dotted path to the WSGI application used by Django's runserver.
+WSGI_APPLICATION = 'myproject.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".

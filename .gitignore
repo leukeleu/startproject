@@ -1,5 +1,5 @@
 *.pyc
-settings.py
-/src/media/
-/src/static/
-/src/.sass-cache/
+/myproject/settings.py
+/media/
+/static/
+/.sass-cache/
