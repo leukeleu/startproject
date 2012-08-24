@@ -1,9 +1,8 @@
-===========================
-Django Fiber starting point
-===========================
+=========
+myproject
+=========
 
 Starting point for creating websites with Django Fiber.
-For a more stripped-down version with Django Fiber take a look at https://github.com/ridethepony/django-fiber-example
 
 Using:
 ======
@@ -13,6 +12,9 @@ Using:
 * MySQL python (1.2.3)
 * South (0.7.5)
 * Compass (0.12.2)
+* Guard (1.3.2)
+* Guard Compass (0.0.6)
+* Guard LiveReload (1.0)
 * Normalize (2.0.1)
 * jQuery (1.7.2)
 
@@ -22,9 +24,9 @@ Installation:
 ::
 
 	$ git clone git@github.com:nvandijk/django-fiber-starting-point.git
-	$ cd django-fiber-starting-point/src
+	$ cd django-fiber-starting-point
 	$ pip install -r requirements.txt
-	$ cp settings_example.py settings.py
+	$ cp myproject/settings_example.py myproject/settings.py
 	$ python manage.py syncdb --migrate
 	$ python manage.py loaddata ./fixtures/example_initial_data.json
 	$ python manage.py runserver 0:8000
@@ -38,5 +40,5 @@ Git pre-commit hook for compiling clean .css files.
 
     #!/bin/sh
 
-    compass compile src --force --config src/config_clean_css.rb
+    compass compile --force --config config_clean_css.rb
     git add *.css
