@@ -1,8 +1,8 @@
 ============
-startproject
+Startproject
 ============
 
-Starting point for creating websites with Django Fiber.
+Startproject is a starting point for creating websites with Django Fiber.
 
 Using:
 ======
@@ -16,7 +16,7 @@ Using:
 * Guard Compass (0.0.6)
 * Guard LiveReload (1.0)
 * Normalize (2.0.1)
-* jQuery (1.7.2)
+* jQuery (1.8)
 
 Installation:
 =============
