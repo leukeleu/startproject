@@ -1,4 +1,4 @@
 Django==1.4.1
-django-fiber==0.9.7.2
+django-fiber==0.9.8.2
 MySQL-python==1.2.3
 South==0.7.5

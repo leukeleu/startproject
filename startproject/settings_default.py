@@ -173,6 +173,6 @@ FIBER_TEMPLATE_CHOICES = [
 ]
 
 SITE_SETTINGS = {
-    'name': 'Django Fiber starting point',
+    'name': 'Startproject',
     'google_analytics_tracking_id': '',
 }
