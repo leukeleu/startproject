@@ -23,10 +23,10 @@ Installation:
 
 ::
 
-	$ git clone git@github.com:nvandijk/django-fiber-starting-point.git
-	$ cd django-fiber-starting-point
+	$ git clone git@github.com:leukeleu/startproject.git
+	$ cd startproject
 	$ pip install -r requirements.txt
-	$ cp startproject/settings_example.py startproject/settings.py
+	$ cp settings_example.py settings.py
 	$ python manage.py syncdb --migrate
 	$ python manage.py loaddata ./fixtures/example_initial_data.json
 	$ python manage.py runserver 0:8000
