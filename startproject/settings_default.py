@@ -2,7 +2,7 @@ import os
 
 import django.conf.global_settings as DEFAULT_SETTINGS
 
-BASE_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
