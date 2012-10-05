@@ -10,13 +10,10 @@ Using:
 * Django (1.4.1)
 * Django Fiber (0.9.8.5)
 * MySQL python (1.2.3)
-* South (0.7.5)
-* Compass (0.12.2)
-* Guard (1.3.2)
-* Guard Compass (0.0.6)
-* Guard LiveReload (1.0)
+* South (0.7.6)
 * Normalize (2.0.1)
 * jQuery (1.8)
+
 
 Installation:
 =============
@@ -31,10 +28,18 @@ Installation:
 	$ python manage.py loaddata ./fixtures/example_initial_data.json
 	$ python manage.py runserver 0:8000
 
+
+Development dependencies:
+=========================
+
+$ gem install compass chunky_png guard guard-compass guard-livereload
+
+
 Git hooks:
 ==========
 
 Git pre-commit hook for compiling clean .css files.
+Place the following in .git/hooks/pre-commit:
 
 ::
 
