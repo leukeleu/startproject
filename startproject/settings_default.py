@@ -83,6 +83,8 @@ STATICFILES_FINDERS = DEFAULT_SETTINGS.STATICFILES_FINDERS + (
 )
 
 # Make this unique, and don't share it with anybody.
+# Use this one-liner to generate a secret key:
+# $ python -c 'import random; print "".join([random.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)])'
 SECRET_KEY = ''
 
 # List of callables that know how to import templates from various sources.
