@@ -8,7 +8,7 @@ Using:
 ======
 
 * Django (1.4.1)
-* Django Fiber (0.9.8.5)
+* Django Fiber (0.9.8.6)
 * MySQL python (1.2.3)
 * South (0.7.6)
 * Normalize (2.0.1)
@@ -27,6 +27,17 @@ Installation:
 	$ python manage.py syncdb --migrate
 	$ python manage.py loaddata ./fixtures/example_initial_data.json
 	$ python manage.py runserver 0:8000
+
+
+Rename:
+-------
+
+When renaming the project, don't forget to replace 'startproject' with the project name in:
+
+* .gitignore
+* manage.py
+* startproject/settings_default.py
+* startproject/wsgi.py
 
 
 Development dependencies:
