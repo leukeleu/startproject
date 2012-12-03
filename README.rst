@@ -12,7 +12,7 @@ Using:
 * MySQL python (1.2.3)
 * South (0.7.6)
 * Normalize (2.0.1)
-* jQuery (1.8)
+* jQuery (1.8.3)
 
 
 Installation:
@@ -56,5 +56,5 @@ Place the following in .git/hooks/pre-commit:
 
     #!/bin/sh
 
-    compass compile --force --config config_clean_css.rb
+    compass clean && compass compile --environment production
     git add *.css

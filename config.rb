@@ -6,8 +6,8 @@ javascripts_dir = "project/static/js"
 
 output_style = :expanded # or :nested or :compact or :compressed
 relative_assets = true
-line_comments = true
+line_comments = (environment == :production) ? false : true
 
 sass_options = {
-    :debug_info => true
+    :debug_info => (environment == :production) ? false : true
 }
