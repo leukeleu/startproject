@@ -8,7 +8,7 @@ Using:
 ======
 
 * Django (1.4.2)
-* Django Fiber (0.9.9)
+* Django Fiber (0.9.9.1)
 * MySQL python (1.2.3)
 * South (0.7.6)
 * Normalize (2.0.1)
