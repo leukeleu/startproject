@@ -34,7 +34,6 @@ Rename:
 
 When renaming the project, don't forget to replace 'startproject' with the project name in:
 
-* .gitignore
 * manage.py
 * startproject/settings_default.py
 * startproject/wsgi.py
