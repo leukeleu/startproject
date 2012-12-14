@@ -1,10 +1,12 @@
-/* imports */
+// image replacement
 
-/* vars */
+.ir {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
 
-/* mixins */
-
-/* classes */
+// clearfix
 
 .clearfix:before, .clearfix:after {
     content: "";
