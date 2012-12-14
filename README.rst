@@ -7,13 +7,13 @@ Startproject is a starting point for creating websites with Django Fiber.
 Using:
 ======
 
-* Django (1.4.2)
+* Django (1.4.3)
 * Django Fiber (0.9.9.1)
 * MySQL python (1.2.3)
 * South (0.7.6)
 * Normalize (2.0.1)
 * jQuery (1.8.3)
-
+* Modernizr (2.6.2)
 
 Installation:
 =============
