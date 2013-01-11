@@ -1,6 +1,5 @@
 {% load fiber_tags compress %}
 <!DOCTYPE html>
-<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
 <!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
 <!--[if IE 9 ]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
@@ -28,21 +27,23 @@
     </head>
 
     <body class="{{ fiber_page.title|slugify }} {% block extend_body_class %}{% endblock %}">
-        <div id="page">
-            <header>
-                <div id="logo">{{ site_settings.name }}</div>
-                <nav id="mainmenu">
+        <div class="page">
+            <header class="header">
+                <div class="logo">
+                    <a href="/">{{ site_settings.name }}</a>
+                </div>
+                <nav class="mainmenu">
                     {% show_menu "mainmenu" 1 1 %}
                 </nav>
             </header>
-            <section id="main">
-                <section id="sidebar-left">
-                    <nav id="submenu">
+            <section class="main">
+                <section class="sidebar-left">
+                    <nav class="submenu">
                         {% show_menu "mainmenu" 2 3 %}
                     </nav>
                 </section>
-                <section id="content">
-                    <nav id="breadcrumbs">
+                <section class="content">
+                    <nav class="breadcrumbs">
                         <ul>
                             {% for fiber_page in fiber_current_pages %}
                             <li>
@@ -58,16 +59,16 @@
                         {% show_page_content "content" %}
                     </article>
                 </section>
-                <section id="sidebar-right">
+                <section class="sidebar-right">
                     <aside>
                         {% show_page_content "sidebar_right" %}
                         {% show_content "address" %}
                     </aside>
                 </section>
             </section>
-            <footer>
+            <footer class="footer">
                 <p>&copy; {% now "Y" %}</p>
-                <nav id="secondarymenu">
+                <nav class="secondarymenu">
                     {% show_menu "secondarymenu" 1 1 %}
                 </nav>
             </footer>

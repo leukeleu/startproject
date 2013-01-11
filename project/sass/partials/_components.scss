@@ -1,5 +1,62 @@
-/* menus */
+// body
+body {
 
+}
+
+// page
+.page {
+    margin: 0 auto;
+    width: 960px;
+}
+
+// header
+.header {
+    margin: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+
+    .logo {
+        margin: 0 0 10px 0;
+
+        a {
+            border-bottom: 0;
+            font-size: 32px;
+            font-weight: bold;
+            color: #666;
+        }
+    }
+}
+
+// main
+.main {
+    @extend .clearfix;
+
+    .sidebar-left,
+    .sidebar-right,
+    .content {
+        float: left;
+        margin: 0 10px;
+        width: 180px;
+        min-height: 10px;
+    }
+
+    .content {
+        width: 540px;
+    }
+}
+
+// footer
+.footer {
+    padding: 10px 10px 60px 10px;
+
+    p {
+        display: inline-block;
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+// menus
 nav {
 
     ul {
@@ -24,9 +81,8 @@ nav {
     }
 }
 
-/* mainmenu */
-
-#mainmenu {
+// mainmenu
+.mainmenu {
 
     ul {
 
@@ -38,9 +94,8 @@ nav {
     }
 }
 
-/* submenu */
-
-#submenu {
+// submenu
+.submenu {
 
     ul {
 
@@ -65,9 +120,8 @@ nav {
     }
 }
 
-/* secondarymenu */
-
-#secondarymenu {
+// secondarymenu
+.secondarymenu {
     display: inline-block;
 
     ul {
@@ -85,9 +139,8 @@ nav {
     }
 }
 
-/* breadcrumbs */
-
-#breadcrumbs {
+// breadcrumbs
+.breadcrumbs {
     margin: 0 0 20px 0;
 
     ul {
