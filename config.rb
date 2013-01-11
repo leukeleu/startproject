@@ -1,12 +1,16 @@
-http_path = "/"
-css_dir = "project/static/css"
-sass_dir = "project/sass"
-images_dir = "project/static/img"
-generated_images_dir = "project/static/sprites"
-javascripts_dir = "project/static/js"
+add_import_path File.dirname(__FILE__)
 
-output_style = :expanded # or :nested or :compact or :compressed
-relative_assets = true
+sass_dir = ""
+css_dir = "static"
+images_dir = "project/static/img"
+generated_images_dir = "static/sprites"
+javascripts_dir = "static/js"
+
+http_images_path = "/static/img"
+http_generated_images_path = "/static/sprites"
+
+output_style = :expanded
+relative_assets = false
 line_comments = (environment == :production) ? false : true
 
 sass_options = {
