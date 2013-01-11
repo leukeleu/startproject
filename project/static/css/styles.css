@@ -215,7 +215,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -378,7 +378,7 @@ table {
 /* header */
 header {
   margin: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   padding: 10px 0;
 }
 header #logo {
@@ -480,7 +480,7 @@ nav ul li a:hover, nav ul li.current a {
 
 /* content formatting */
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+  font-family: "Helvetica Neue", "Helvetica", "Arial";
   font-size: 14px;
   line-height: 1.5;
   color: #666;
@@ -545,7 +545,7 @@ article table tr th,
 article table tr td,
 aside table tr th,
 aside table tr td {
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
   padding: 5px;
   vertical-align: top;
 }
