@@ -8,7 +8,7 @@ Using:
 ======
 
 * Django (1.4.3)
-* Django Fiber (0.9.9.1)
+* Django Fiber (0.10)
 * MySQL python (1.2.3)
 * South (0.7.6)
 * Normalize (2.0.1)
@@ -42,18 +42,6 @@ When renaming the project, don't forget to replace 'startproject' with the proje
 Development dependencies:
 =========================
 
-$ gem install compass chunky_png guard guard-compass guard-livereload
-
-
-Git hooks:
-==========
-
-Git pre-commit hook for compiling clean .css files.
-Place the following in .git/hooks/pre-commit:
-
 ::
 
-    #!/bin/sh
-
-    compass clean && compass compile --environment production
-    git add *.css
+    $ gem install compass chunky_png guard guard-compass guard-livereload
