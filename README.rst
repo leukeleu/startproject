@@ -9,7 +9,7 @@ Using:
 
 * Django (1.4.3)
 * Django Fiber (0.10)
-* MySQL python (1.2.3)
+* MySQL python (1.2.4)
 * South (0.7.6)
 * Normalize (2.0.1)
 * jQuery (1.8.3)
