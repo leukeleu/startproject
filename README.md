@@ -1,24 +1,18 @@
-============
-Startproject
-============
+# Startproject
 
 Startproject is a starting point for creating websites with Django Fiber.
 
-Using:
-======
+## Using:
 
 * Django (1.4.3)
 * Django Fiber (0.10)
 * MySQL python (1.2.4)
 * South (0.7.6)
-* Normalize (2.0.1)
-* jQuery (1.8.3)
+* Normalize (2.1.0)
+* jQuery (1.9.1)
 * Modernizr (2.6.2)
 
-Installation:
-=============
-
-::
+## Installation:
 
 	$ git clone git@github.com:leukeleu/startproject.git
 	$ cd startproject
@@ -29,8 +23,7 @@ Installation:
 	$ python manage.py runserver 0:8000
 
 
-Rename:
--------
+## Rename:
 
 When renaming the project, don't forget to replace 'startproject' with the project name in:
 
@@ -39,9 +32,6 @@ When renaming the project, don't forget to replace 'startproject' with the proje
 * startproject/wsgi.py
 
 
-Development dependencies:
-=========================
-
-::
+## Development dependencies:
 
     $ gem install compass chunky_png guard guard-compass guard-livereload
