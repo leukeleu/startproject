@@ -31,7 +31,6 @@ When renaming the project, don't forget to replace 'startproject' with the proje
 * startproject/settings_default.py
 * startproject/wsgi.py
 
-
 ## Development dependencies:
 
     $ gem install compass chunky_png guard guard-compass guard-livereload
