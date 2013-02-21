@@ -30,6 +30,7 @@ When renaming the project, don't forget to replace 'startproject' with the proje
 * manage.py
 * startproject/settings_default.py
 * startproject/wsgi.py
+* startporoject (directory)
 
 ## Development dependencies:
 
