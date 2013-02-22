@@ -32,6 +32,16 @@ When renaming the project, don't forget to replace 'startproject' with the proje
 * startproject/wsgi.py
 * startproject (directory)
 
+
+## Generate a secret key:
+
+`SECRET_KEY` is set to an empty string in `startproject/settings_default.py`
+
+For production generate a new secret key with the following one-liner and use the result as value for `SECRET_KEY`:
+
+	$ python -c 'import random; print "".join([random.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)])'
+
+
 ## Development dependencies:
 
     $ gem install compass chunky_png guard guard-compass guard-livereload
