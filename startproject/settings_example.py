@@ -12,5 +12,9 @@ DATABASES = {
         'PASSWORD': 'password',
         'HOST': '',
         'PORT': '',
+        'STORAGE_ENGINE': 'MyISAM',
+        'OPTIONS': {
+            'init_command': 'SET storage_engine=MyISAM',
+        },
     }
 }
