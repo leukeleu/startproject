@@ -6,15 +6,13 @@ TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'database',
-        'USER': 'username',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd-name',
+        'USER': 'd-user',
         'PASSWORD': 'password',
         'HOST': '',
-        'PORT': '',
-        'STORAGE_ENGINE': 'MyISAM',
-        'OPTIONS': {
-            'init_command': 'SET storage_engine=MyISAM',
-        },
+        'PORT': ''
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
