@@ -44,4 +44,8 @@ For production generate a new secret key with the following one-liner and use th
 
 ## Development dependencies:
 
-    $ gem install compass chunky_png guard guard-compass guard-livereload
+    $ gem install compass oily_png guard guard-compass guard-livereload
+
+And don't forget to generate the css:
+
+    $ compass compile
