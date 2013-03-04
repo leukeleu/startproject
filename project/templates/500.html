@@ -1,4 +1,32 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Startproject</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
 
-{% block doc_title %}Server error{% endblock  %}
-{% block title %}<h1>Server error</h1>{% endblock  %}
+        .page {
+            margin: 80px auto;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Internal Server Error</h1>
+        <p>
+            Something went wrong.
+        </p>
+        <p>
+            <a href="/">Back to the homepage</a>
+        </p>
+    </div>
+</body>
+</html>
+
