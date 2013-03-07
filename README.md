@@ -4,7 +4,7 @@ Startproject is a starting point for creating websites with Django Fiber.
 
 ## Using:
 
-* Django (1.4.5)
+* Django (1.5)
 * Django Fiber (0.10.1)
 * Psycopg PostgreSQL (2.4.6)
 * South (0.7.6)
