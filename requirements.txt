@@ -1,4 +1,4 @@
-Django==1.5
+Django==1.5.1
 psycopg2==2.4.6
 South==0.7.6
-django-fiber==0.10.1
+django-fiber==0.10.2
