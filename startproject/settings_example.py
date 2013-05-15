@@ -11,7 +11,11 @@ DATABASES = {
         'USER': 'd-user',
         'PASSWORD': 'password',
         'HOST': '',
-        'PORT': ''
+        'PORT': '',
+        'STORAGE_ENGINE': 'MyISAM',
+        'OPTIONS': {
+            'init_command': 'SET storage_engine=MyISAM',
+        },
     }
 }
 
