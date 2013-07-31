@@ -5,7 +5,7 @@ Startproject is a starting point for creating websites with Django Fiber.
 ## Using:
 
 * Django (1.5.1)
-* Django Fiber (0.10.3)
+* Django Fiber (0.10.4)
 * MySQL python (1.2.4)
 * South (0.8.1)
 * Normalize (2.1.2)
@@ -35,7 +35,7 @@ When renaming the project, don't forget to replace 'startproject' with the proje
 
 ## Generate a secret key:
 
-`SECRET_KEY` is set to an empty string in `startproject/settings_default.py`
+`SECRET_KEY` is set to an empty string in `startproject/settings_example.py`
 
 For production generate a new secret key with the following one-liner and use the result as value for `SECRET_KEY`:
 
