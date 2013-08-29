@@ -6,9 +6,23 @@
 <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>{% block doc_title %}{{ fiber_page.title }}{% endblock %} - {{ site_settings.name }}</title>
+        <title>
+            {% block doc_title %}
+                {% if fiber_page.doc_title %}
+                    {{ fiber_page.doc_title }}
+                {% else %}
+                    {{ fiber_page.title }}
+                {% endif %}
+                - {{ site_settings.name }}
+            {% endblock %}
+        </title>
 
-        {% if fiber_page.meta_description %}<meta name="description" content="{{ fiber_page.meta_description }}">{% endif %}
+        {% if fiber_page.meta_description %}
+            <meta charset="utf-8" name="description" content="{{ fiber_page.meta_description }}" />
+        {% endif %}
+        {% if fiber_page.meta_keywords %}
+            <meta charset="utf-8" name="keywords" content="{{ fiber_page.meta_keywords }}" />
+        {% endif %}
 
         {% compress css %}
             <link href="{{ STATIC_URL }}project/styles/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
