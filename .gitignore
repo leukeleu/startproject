@@ -3,3 +3,4 @@ settings.py
 /media/
 /static/
 /.sass-cache/
+/node_modules/
