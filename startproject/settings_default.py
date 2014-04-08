@@ -176,4 +176,5 @@ FIBER_TEMPLATE_CHOICES = [
 SITE_SETTINGS = {
     'name': 'Startproject',
     'google_analytics_tracking_id': '',
+    'google_analytics_domain': 'auto',
 }
