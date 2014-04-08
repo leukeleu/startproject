@@ -4,15 +4,8 @@ var livereload = require('gulp-livereload');
 var map = require('map-stream');
 var server = livereload();
 
-var paths = {
-  styles: {
-        src:  './project/styles/**/*.scss',
-        dest: './static/project/styles/'
-  }
-};
-
 gulp.task('styles', function() {
-    return gulp.src(paths.styles.src)
+    return gulp.src('./project/styles/**/*.scss')
     .pipe(compass({
         config_file: './config.rb',
         css: './static/project/styles',
@@ -20,7 +13,7 @@ gulp.task('styles', function() {
     })).on('error', function(err) {
         console.log(err);
     })
-    .pipe(gulp.dest(paths.styles.dest))
+    .pipe(gulp.dest('./static/project/styles/'))
     .pipe(livereload());
 });
 
