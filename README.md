@@ -46,6 +46,12 @@ For production generate a new secret key with the following one-liner and use th
 
     $ gem install compass oily_png guard guard-compass guard-livereload
 
-And don't forget to generate the css:
+The next steps require node.js.
+Install node packages / gulp dependencies:
 
-    $ compass compile
+    $ npm install
+
+To execute livereload / compass
+
+	$ gulp dev
+

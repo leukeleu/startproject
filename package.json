@@ -1,0 +1,31 @@
+{
+  "name": "Startproject",
+  "version": "0.5.0",
+  "description": "Gulp script for startproject",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.5.6",
+    "gulp-compass": "~1.1.6",
+    "map-stream": "~0.1.0",
+    "gulp-livereload": "~1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leukeleu/startproject.git"
+  },
+  "keywords": [
+    "Startproject",
+    "gulp",
+    "npm",
+    "compass"
+  ],
+  "author": "Jaco Bovenschen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leukeleu/startproject/issues"
+  },
+  "homepage": "https://github.com/leukeleu/startproject"
+}
