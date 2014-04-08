@@ -18,14 +18,16 @@
         </title>
 
         {% if fiber_page.meta_description %}
-            <meta charset="utf-8" name="description" content="{{ fiber_page.meta_description }}" />
+            <meta charset="utf-8" name="description" content="{{ fiber_page.meta_description }}">
         {% endif %}
         {% if fiber_page.meta_keywords %}
-            <meta charset="utf-8" name="keywords" content="{{ fiber_page.meta_keywords }}" />
+            <meta charset="utf-8" name="keywords" content="{{ fiber_page.meta_keywords }}">
         {% endif %}
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         {% compress css %}
-            <link href="{{ STATIC_URL }}project/styles/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+            <link href="{{ STATIC_URL }}project/styles/styles.css" rel="stylesheet">
         {% endcompress %}
 
         {% compress css %}
