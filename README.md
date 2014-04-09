@@ -58,4 +58,6 @@ Install gulp as a global node.js package
 To execute livereload / compass
 
 	$ gulp dev
+	
+*Note*: currently livereload only works when DEBUG=True
 
