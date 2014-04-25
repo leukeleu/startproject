@@ -9,7 +9,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Jeremy Crowlesmith', 'jcrowlesmith@leukeleu.nl'),
 )
 
 MANAGERS = ADMINS
@@ -97,10 +97,10 @@ MIDDLEWARE_CLASSES = DEFAULT_SETTINGS.MIDDLEWARE_CLASSES + (
     'fiber.middleware.AdminPageMiddleware',
 )
 
-ROOT_URLCONF = 'startproject.urls'
+ROOT_URLCONF = 'cast.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'startproject.wsgi.application'
+WSGI_APPLICATION = 'cast.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -174,7 +174,7 @@ FIBER_TEMPLATE_CHOICES = [
 ]
 
 SITE_SETTINGS = {
-    'name': 'Startproject',
+    'name': 'Cast',
     'google_analytics_tracking_id': '',
     'google_analytics_domain': 'auto',
 }

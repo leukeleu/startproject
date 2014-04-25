@@ -1,6 +1,6 @@
-# Startproject
+# Cast
 
-Startproject is a starting point for creating websites with Django Fiber.
+Cast is a starting point for creating websites with Django Fiber.
 
 ## Using:
 
@@ -14,10 +14,10 @@ Startproject is a starting point for creating websites with Django Fiber.
 
 ## Installation:
 
-	$ git clone git@github.com:leukeleu/startproject.git
-	$ cd startproject
+	$ git clone git@github.com:cast/cast.git
+	$ cd cast
 	$ pip install -r requirements.txt
-	$ cp startproject/settings_example.py startproject/settings.py
+	$ cp cast/settings_example.py cast/settings.py
 	$ python manage.py syncdb --migrate
 	$ python manage.py loaddata ./fixtures/example_initial_data.json
 	$ python manage.py runserver 0:8000
@@ -25,7 +25,7 @@ Startproject is a starting point for creating websites with Django Fiber.
 
 ## Rename:
 
-When renaming the project, don't forget to replace 'startproject' with the project name in:
+When renaming the project, don't forget to replace 'cast' with the project name in:
 
 * manage.py
 * startproject/settings_default.py
