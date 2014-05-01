@@ -1,7 +1,7 @@
 {
-  "name": "Cast",
+  "name": "Startproject",
   "version": "0.5.0",
-  "description": "Gulp script for Cast",
+  "description": "Gulp script for startproject",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "~3.5.6",
@@ -14,15 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/leukeleu/cast.git"
+    "url": "git://github.com/leukeleu/startproject.git"
   },
   "keywords": [
-    "Cast"
+    "Startproject",
+    "gulp",
+    "npm",
+    "compass"
   ],
-  "author": "Jeremy Crowlemsmith",
+  "author": "Jaco Bovenschen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leukeleu/cast/issues"
+    "url": "https://github.com/leukeleu/startproject/issues"
   },
-  "homepage": "https://github.com/leukeleu/cast"
+  "homepage": "https://github.com/leukeleu/startproject"
 }
