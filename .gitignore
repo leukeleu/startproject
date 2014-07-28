@@ -1,5 +1,6 @@
 *.pyc
 settings.py
+site_settings.py
 /media/
 /static/
 /.sass-cache/
