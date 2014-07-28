@@ -1,4 +1,4 @@
 Django==1.6.5
-South==0.8.4
+South==1.0
 django-fiber==0.13
 psycopg2==2.5.3
