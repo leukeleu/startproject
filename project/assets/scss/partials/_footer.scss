@@ -1,0 +1,29 @@
+footer {
+    width: 100%;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+footer .content {
+    padding: 0 12px;
+}
+
+.footer-nav {
+    margin: 19px 0 0;
+}
+
+.footer-nav ul {
+    padding: 0 12px;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+
+    footer .content {
+        width: 62%;
+        margin: 0 4% 0 0;
+        float: left;
+    }
+}

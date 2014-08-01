@@ -26,7 +26,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {% compress css %}
-            <link href="{{ STATIC_URL }}project/styles/styles.css" rel="stylesheet">
+            <link href="{{ STATIC_URL }}css/base.css" rel="stylesheet">
         {% endcompress %}
 
         {% compress css %}
@@ -43,55 +43,35 @@
     </head>
 
     <body class="{{ fiber_page.title|slugify }} {% block extend_body_class %}{% endblock %}">
-        <div class="page">
-            <header class="header">
-                <div class="logo">
-                    <a href="/">{{ site_settings.name }}</a>
-                </div>
-                <nav class="mainmenu">
-                    {% show_menu "mainmenu" 1 1 %}
-                </nav>
-            </header>
-            <section class="main">
-                <section class="sidebar-left">
-                    <nav class="submenu">
-                        {% show_menu "mainmenu" 2 3 %}
-                    </nav>
-                </section>
-                <section class="main-content">
-                    <nav class="breadcrumbs">
-                        <ul>
-                            {% for fiber_page in fiber_current_pages %}
-                            <li>
-                                <a href="{{ fiber_page.get_absolute_url }}">{{ fiber_page.title }}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </nav>
-                    <article>
-                        {% block title %}
-                            <h1>{{ fiber_page.title }}</h1>
-                        {% endblock %}
-                        {% show_page_content "content" %}
-                    </article>
-                </section>
-                <section class="sidebar-right">
-                    <aside>
-                        {% show_page_content "sidebar_right" %}
-                        {% show_content "address" %}
-                    </aside>
-                </section>
-            </section>
-            <footer class="footer">
-                <p>&copy; {% now "Y" %}</p>
-                <nav class="secondarymenu">
-                    {% show_menu "secondarymenu" 1 1 %}
-                </nav>
-            </footer>
-        </div>
+        <header class="navigation-bar">
+            <div class="open-menu">
+                <span></span>
+            </div>
+            <h1 class="logo"><a>{{ site_settings.name }}</a></h1>
+            <nav class="navigation">
+                {% show_menu "mainmenu" 1 999 "all" %}
+            </nav>
+        </header>
+
+        <main class="content">
+            {% block title %}
+                <h1>{{ fiber_page.title }}</h1>
+            {% endblock %}
+
+            {% show_page_content "content" %}
+        </main>
+        <aside class="content">
+            {% show_page_content "sidebar_right" %}
+        </aside>
+        <footer>
+            {% show_content "address" %}
+            <nav class="footer-nav">
+                {% show_menu "secondarymenu" 1 1 %}
+            </nav>
+        </footer>
 
         {% compress js %}
-            <script src="{{ STATIC_URL }}js/lib/jquery-2.1.0.js"></script>
+            <script src="{{ STATIC_URL }}js/lib/jquery-2.1.1.js"></script>
             <script src="{{ STATIC_URL }}js/lib/jquery.placeholder-2.0.8.js"></script>
             <script src="{{ STATIC_URL }}js/base.js"></script>
         {% endcompress %}

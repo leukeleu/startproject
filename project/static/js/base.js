@@ -20,8 +20,23 @@ APP.download_links = function() {
         .attr('target', '_blank');
 };
 
+APP.init_menu = function() {
+    $('.open-menu').on('click', function() {
+        $('body').addClass('active-menu');
+
+        $('body.active-menu').on('click', function(e) {
+            if (e.target.nodeName == 'BODY') {
+                $('body').removeClass('active-menu');
+
+                $('body.active-menu').detach(this);
+            }
+        });
+    });
+};
+
 $(function() {
-    APP.init_placeholder();
+//    APP.init_placeholder();
     APP.external_links();
+    APP.init_menu();
     APP.download_links();
 });
