@@ -88,7 +88,6 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('javascript', function() {
-    console.log('hjskjhdfhjdfsaskdj');
     return gulp.src(['*/static/js/**/*.js', '!*/static/js/lib/**/*.js'])
         .pipe(reload({stream: true, once: true}))
         .pipe($.jshint())
