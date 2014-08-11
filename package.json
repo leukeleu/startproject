@@ -10,7 +10,8 @@
     "gulp-if": "^1.2.4",
     "gulp-jshint": "^1.6.3",
     "jshint-stylish": "^0.3.0",
-    "map-stream": "^0.1.0"
+    "map-stream": "^0.1.0",
+    "gulp-imagemin": "^0.6.2"
   },
   "engines": {
     "node": ">=0.10.0"

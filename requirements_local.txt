@@ -1,1 +1,2 @@
 https://github.com/ridethepony/django-fiber/zipball/dev
+psycopg2==2.5.3
